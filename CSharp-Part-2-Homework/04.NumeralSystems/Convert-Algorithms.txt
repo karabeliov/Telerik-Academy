@@ -1,0 +1,41 @@
+// Convert Algorithms
+var hex = "FAB1"; // input Numeric
+var decimalRepresentation = 0; // output Numeric
+
+for (int i = 0; i < hex.Length; i++)
+{
+	decimalRepresentation *= 16; // hexa
+	if (hex[i] >= '0' && hex[i] <= '9')
+	{
+		decimalRepresentation = hex[i] - '0'; // to decimal char 0-9
+	}
+	else
+	{
+		decimalRepresentation = hex[i] + 10 - 'A';
+	}
+}
+
+
+
+// Other Convert Algorithms
+int power = 0;
+BigInteger result = 0;
+for (int index = input.Length - 1; index >= 0; index--)
+{
+	int currentNumber = input[index] - '0';
+	result += currentNumber * Power(7, power);
+
+	power++;
+}
+
+
+private static BigInteger Power(int currentNumber, int power)
+{
+	BigInteger result = 1;
+	for (int i = 0; i < power; i++)
+	{
+		result *= currentNumber;
+	}
+
+	return result;
+}

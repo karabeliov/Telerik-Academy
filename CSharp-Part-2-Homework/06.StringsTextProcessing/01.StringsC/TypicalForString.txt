@@ -1,0 +1,11 @@
+A string is a data type used in programming, such as an integer and floating point unit, but is used to represent text rather than numbers. It is comprised of a set of characters that can also contain spaces and numbers. For example, the word "hamburger" and the phrase "I ate 3 hamburgers" are both strings. Even "12345" could be considered a string, if specified correctly. Typically, programmers must enclose strings in quotation marks for the data to recognized as a string and not a number or variable name.
+
+For example, in the comparison:
+
+if (Option1 == Option2) then ...
+
+Option1 and Option2 may be variables containing integers, strings, or other data. If the values are the same, the test returns a value of true, otherwise the result is false. In the comparison:
+
+if ("Option1" == "Option2") then ...
+
+Option1 and Option2 are being treated as strings. Therefore the test is comparing the words "Option1" and "Option2," which would return false. The length of a string is often determined by using a null character.

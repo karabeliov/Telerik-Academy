@@ -1,0 +1,4 @@
+Line 1: Telerik Academy
+Line 2: is the best way
+Line 3: to success.
+Line 4: Good Luck with C# part 2 example!
