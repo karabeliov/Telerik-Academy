@@ -1,7 +1,0 @@
-Telerik Academy
-homework
-is the best way
-is not bad
-to success.
-
-Good Luck with C# part 2 example!

@@ -1,3 +1,0 @@
-﻿test -> 3 time
-testing -> 2 time
-tested -> 1 time
