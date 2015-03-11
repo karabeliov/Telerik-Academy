@@ -10,7 +10,6 @@ using System.Text;
 /// 
 /// </summary>
 
-// Define a class
 class GSM
 {
     private string model;
@@ -54,7 +53,6 @@ class GSM
     }
 }
 
-// Define a class
 class Display
 {
     private double size;
@@ -80,7 +78,6 @@ class Display
     }
 }
 
-// Define a class
 class Battery
 {
     private string model;
