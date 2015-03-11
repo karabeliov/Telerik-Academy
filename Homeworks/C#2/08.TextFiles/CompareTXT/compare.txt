@@ -1,0 +1,3 @@
+1) Shit + right Mouse
+2) example.exe < input.txt > output.txt
+3) https://www.diffchecker.com/ website 

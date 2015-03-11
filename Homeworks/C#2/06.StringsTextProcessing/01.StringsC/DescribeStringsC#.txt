@@ -1,0 +1,78 @@
+The System.String type (shorthand string in C#) is one of the most important types in .NET, and unfortunately it's much misunderstood. This article attempts to deal with some of the basics of the type.
+
+What is a string?
+
+A string is basically a sequence of characters. Each character is a Unicode character in the range U+0000 to U+FFFF (more on that later). The string type (I'll use the C# shorthand rather than putting System.String each time) has the following characteristics:
+
+It is a reference type
+It's a common misconception that string is a value type. That's because its immutability (see next point) makes it act sort of like a value type. It actually acts like a normal reference type. See my articles on parameter passing and memory for more details of the differences between value types and reference types.
+It's immutable
+You can never actually change the contents of a string, at least with safe code which doesn't use reflection. Because of this, you often end up changing the value of a string variable. For instance, the code s = s.Replace ("foo", "bar"); doesn't change the contents of the string that s originally referred to - it just sets the value of s to a new string, which is a copy of the old string but with "foo" replaced by "bar".
+It can contain nulls
+C programmers are used to strings being sequences of characters ending in '\0', the nul or null character. (I'll use "null" because that's what the Unicode code chart calls it in the detail; don't get it confused with the null keyword in C# - char is a value type, so can't be a null reference!) In .NET, strings can contain null characters with no problems at all as far as the string methods themselves are concerned. However, other classes (for instance many of the Windows Forms ones) may well think that the string finishes at the first null character - if your string ever appears to be truncated oddly, that could be the problem.
+It overloads the == operator
+When the == operator is used to compare two strings, the Equals method is called, which checks for the equality of the contents of the strings rather than the references themselves. For instance, "hello".Substring(0, 4)=="hell" is true, even though the references on the two sides of the operator are different (they refer to two different string objects, which both contain the same character sequence). Note that operator overloading only works here if both sides of the operator are string expressions at compile time - operators aren't applied polymorphically. If either side of the operator is of type object as far as the compiler is concerned, the normal == operator will be applied, and simple reference equality will be tested.
+Interning
+
+.NET has the concept of an "intern pool". It's basically just a set of strings, but it makes sure that every time you reference the same string literal, you get a reference to the same string. This is probably language-dependent, but it's certainly true in C# and VB.NET, and I'd be very surprised to see a language it didn't hold for, as IL makes it very easy to do (probably easier than failing to intern literals). As well as literals being automatically interned, you can intern strings manually with the Intern method, and check whether or not there is already an interned string with the same character sequence in the pool using the IsInterned method. This somewhat unintuitively returns a string rather than a boolean - if an equal string is in the pool, a reference to that string is returned. Otherwise, null is returned. Likewise, the Intern method returns a reference to an interned string - either the string you passed in if was already in the pool, or a newly created interned string, or an equal string which was already in the pool.
+
+Literals
+
+Literals are how you hard-code strings into C# programs. There are two types of string literals in C# - regular string literals and verbatim string literals. Regular string literals are similar to those in many other languages such as Java and C - they start and end with ", and various characters (in particular, " itself, \, and carriage return (CR) and line feed (LF)) need to be "escaped" to be represented in the string. Verbatim string literals allow pretty much anything within them, and end at the first " which isn't doubled. Even carriage returns and line feeds can appear in the literal! To obtain a " within the string itself, you need to write "". Verbatim string literals are distinguished by having an @ before the opening quote. Here are some examples of the two types of literal, and what they amount to:
+
+Note that the difference is only for the compiler's sake. Once the string is in the compiled code, there's no such thing as a verbatim string literal vs a regular string literal.
+
+The complete set of escape sequences is as follows:
+
+\' - single quote, needed for character literals
+\" - double quote, needed for string literals
+\\ - backslash
+\0 - Unicode character 0
+\a - Alert (character 7)
+\b - Backspace (character 8)
+\f - Form feed (character 12)
+\n - New line (character 10)
+\r - Carriage return (character 13)
+\t - Horizontal tab (character 9)
+\v - Vertical quote (character 11)
+\uxxxx - Unicode escape sequence for character with hex value xxxx
+\xn[n][n][n] - Unicode escape sequence for character with hex value nnnn (variable length version of \uxxxx)
+\Uxxxxxxxx - Unicode escape sequence for character with hex value xxxxxxxx (for generating surrogates)
+Of these, \a, \f, \v, \x and \U are rarely used in my experience.
+
+Strings and the debugger
+
+Numerous people run into problems when inspecting strings in the debugger, both with VS.NET 2002 and VS.NET 2003. Ironically, the problems are often generated by the debugger trying to be helpful, and either displaying the string as a regular string literal with backslash-escaped characters in, or displaying it as a verbatim string literal complete with leading @. This leads to many questions asking how the @ can be removed, despite the fact that it's not really there in the first place - it's only how the debugger's showing it. Also, some versions of VS.NET will stop displaying the contents of the string at the first null character, and evaluate its Length property incorrectly, calculating the value itself instead of asking the managed code. Again, it then considers the string to finish at the first null character.
+
+Given the confusion this has caused, I believe it's best to examine strings in a different way when debugging, at least if you think something odd is going on. I suggest using a method like the one below, which will print the contents of a string to the console in a safe way. Depending on what kind of application you're developing, you may want to write this information to a log file, to the debug or trace listeners, or pop it up in a message box.
+
+Alternatively, as an interactive way of examining text, you can use my simple Unicode Explorer - just input the text, and see what the characters, UTF-16 code units and UTF-8 bytes are.
+
+
+Memory usage
+
+In the current implementation at least, strings take up 20+(n/2)*4 bytes (rounding the value of n/2 down), where n is the number of characters in the string. The string type is unusual in that the size of the object itself varies. The only other classes which do this (as far as I know) are arrays. Essentially, a string is a character array in memory, plus the length of the array and the length of the string (in characters). The length of the array isn't always the same as the length in characters, as strings can be "over-allocated" within mscorlib.dll, to make building them up easier. (StringBuilder does this, for instance.) While strings are immutable to the outside world, code within mscorlib can change the contents, so StringBuilder creates a string with a larger internal character array than the current contents requires, then appends to that string until the character array is no longer big enough to cope, at which point it creates a new string with a larger array. The string length member also contains a flag in its top bit to say whether or not the string contains any non-ASCII characters. This allows for extra optimisation in some cases.
+
+Although strings aren't null-terminated as far as the API is concerned, the character array is null-terminated, as this means it can be passed directly to unmanaged functions without any copying being involved, assuming the inter-op specifies that the string should be marshalled as Unicode.
+
+Encoding
+
+(If you don't know about character encodings and Unicode, please read my article on the subject first.)
+
+As stated at the start of the article, strings are always in Unicode encoding. The idea of "a Big-5 string" or "a string in UTF-8 encoding" is a mistake (as far as .NET is concerned) and usually indicates a lack of understanding of either encodings or the way .NET handles strings. It's very important to understand this - treating a string as if it represented some valid text in a non-Unicode encoding is almost always a mistake.
+
+Now, the Unicode coded character set (one of the flaws of Unicode is that the one term is used for various things, including a coded character set and a character encoding scheme) contains more than 65536 characters. This means that a single char (System.Char) cannot cover every character. This leads to the use of surrogates where characters above U+FFFF are represented in strings as two characters. Essentially, string uses the UTF-16 character encoding form. Most developers may well not need to know much about this, but it's worth at least being aware of it.
+
+Culture and internationalization oddities
+
+Some of the oddities of Unicode lead to oddities in string and character handling. Many of the string methods are culture-sensitive - in other words, what they do depends on the culture of the current thread. For example, what would you expect "i".toUpper() to return? Most people would say "I", but in Turkish the correct answer is "I" (Unicode U+0130, "Latin capital I with dot above"). To perform a culture-insensitive case change, you can use CultureInfo.InvariantCulture, and pass that to the overload of String.ToUpper which takes a CultureInfo.
+
+There are further oddities when it comes to comparing, sorting, and finding the index of a substring. Some of these are culture-specific, and some aren't. For instance, in all cultures (as far as I can see), "lassen" and "la\u00dfen" (a "sharp S" or eszett being the Unicode-escaped character in there) are considered equal when CompareTo or Compare are used, but not when Equals is used. IndexOf will treat the eszett as the same as "ss", unless you use a CompareInfo.IndexOf and specify CompareOptions.Ordinal as the options to use.
+
+Some other unicode character appear to be completely invisible to the normal IndexOf. Someone asked in the C# newsgroup why a search/replace method was going into an infinite loop. It was repeatedly using Replace to replace all double spaces with a single space, and checking whether or not it had finished by using IndexOf, so that multiple spaces would collapse to a single space. Unfortunately, this was failing due to a "strange" character in the original string between two spaces. IndexOf matched the double space, ignoring the extra character, but Replace didn't. I don't know which exact character was in the real data, but it can be easily reproduced using U+200C which is a zero-width non-joiner character (whatever that means, exactly!). Put one of those in the middle of the text you're searching in, and IndexOf will ignore it, but Replace won't. Again, to make the two methods behave the same, you can use CompareInfo.IndexOf and pass in CompareOptions.Ordinal. My guess is that there's a lot of code which would fail on "awkward" data like this. (I wouldn't for a moment claim that all my code is immune, either.)
+
+Microsoft has some recommendations around string handling - they date back to 2005, but they're still well worth reading.
+
+Conclusion
+
+For such a core type, strings (and textual data in general) have more complexity than you might initially expect. It's important to understand the basics listed here, even if some of the finer points of comparisons and casing in multi-cultural contexts elude you at the moment. In particular, being able to diagnose encoding errors where data is being lost by logging the real string data is vital.
