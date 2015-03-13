@@ -7,16 +7,16 @@
 
     public class Call
     {
-        private DateTime date;
-        private DateTime time;
+        private string date;
+        private string time;
         private string dialPhoneNumber;
-        private int duration;
+        private TimeSpan duration;
 
         public Call()
         { 
         }
 
-        public Call(DateTime date, DateTime time, string dialPhoneNumber, int duration)
+        public Call(string date, string time, string dialPhoneNumber, TimeSpan duration)
             : this()
         {
             this.Date = date;
@@ -25,13 +25,13 @@
             this.Duration = duration;
         }
 
-        public DateTime Date
+        public string Date
         {
             get { return this.date; }
             set { this.date = value; }
-        }  
+        }
 
-        public DateTime Time
+        public string Time
         {
             get { return this.time; }
             set { this.time = value; }
@@ -43,7 +43,7 @@
             set { this.dialPhoneNumber = value; }
         }
 
-        public int Duration
+        public TimeSpan Duration
         {
             get { return this.duration; }
             set { this.duration = value; }
