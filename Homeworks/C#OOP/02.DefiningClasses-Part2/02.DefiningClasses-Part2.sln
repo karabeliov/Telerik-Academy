@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tastFrom5to7", "tastFrom5to
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tastFrom8to10", "tastFrom8to10\tastFrom8to10.csproj", "{795A2EAF-2D71-4FE9-B2D7-D87F9439D897}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VersionAttribute", "VersionAttribute\VersionAttribute.csproj", "{5E04FB53-F4E0-4345-BC0D-EBF7AC68E2BC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{795A2EAF-2D71-4FE9-B2D7-D87F9439D897}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{795A2EAF-2D71-4FE9-B2D7-D87F9439D897}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{795A2EAF-2D71-4FE9-B2D7-D87F9439D897}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E04FB53-F4E0-4345-BC0D-EBF7AC68E2BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E04FB53-F4E0-4345-BC0D-EBF7AC68E2BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E04FB53-F4E0-4345-BC0D-EBF7AC68E2BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E04FB53-F4E0-4345-BC0D-EBF7AC68E2BC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
