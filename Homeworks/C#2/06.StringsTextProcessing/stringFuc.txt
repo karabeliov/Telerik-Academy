@@ -1,0 +1,74 @@
+=================
+  /* Strings */
+=================
+ 
+WARNING! Strings are immutable!!
+ 
+string.Empty;
+string.Join(" ", <collection>);
+string.Concat();
+string.Compare(<string>, <string>, <bool>/*iGnORe CaSe*/); {Returns Int32, negative if smaller, positive if bigger, 0 if equal}
+ 
+<string>.Split(new string[] {" ", ","}, StringSplitOptions.RemoveEmptyEntries);
+<string>.CompareTo(<string>);
+<string>.Equals(<string>);
+<string>.IndexOf();
+<string>.IndexOfAny();
+<string>.LastIndexOf();
+<string>.Substring();
+<string>.Replace(); {Stackable}
+<string>.Remove(); {Inverted Substring}
+<string>.ToLower();
+<string>.ToUpper();
+<string>.Trim();
+<string>.TrimStart();
+<string>.TrimEnd();
+ 
+=================
+  /* Builder */
+=================
+ 
+WARNING! StringBuilders are NOT immutable!!
+ 
+var builder = new StringBuilder(<capacity>);
+builder[<index>];
+ 
+builder.Append(); {faster version of +}
+builder.AppendLine(); {Use .Trim to remove the empty line at the end! This can cost you 100 points, hehe}
+builder.Capacity();
+builder.Lenght();
+builder.Insert();
+builder.Remove();
+ 
+int[] numbers = Console.ReadLine().Split(new string[] {" ",","}, StringSplitOptions.RemoveEmptyEntries)
+                                                                  .Select(x => int.Parse(x)).ToArray();
+ 
+ 
+=================
+  /* Format */
+=================
+ 
+Params:
+D - Number (for integer types)
+C - Currency (according to current culture)
+E - Number in exponential notation
+P - Percentage
+X - Hexadecimal number
+F - Fixed point (for real numbers)
+string.Format("{0:F2}, <string>")
+ 
+Can also use a template:
+string template = "{0} {1} {2, <alignment>:<param>}";
+text = string.Format(template, 15, 20, 30);
+ 
+Dates: (double letter = leading zero)
+d, dd - Day
+M, MM - Month
+yy, yyyy - Year (two or four digits)
+h, HH, m, mm, s, ss - Hours, minutes, seconds
+cw("{0:d.MM.yyyy HH:mm:ss}", DateTime.Now)
+output ->> 06.03.2015 10:00:00
+ 
+Cultures:
+cw(System.Threading.Thread.CurrentThread.CurrentCulture);
+System.Threading.Thread.CurrentThread.CurrentCulture = new CultureInfo("en-UK");
