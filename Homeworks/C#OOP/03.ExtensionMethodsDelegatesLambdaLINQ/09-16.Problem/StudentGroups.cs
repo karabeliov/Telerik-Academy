@@ -22,15 +22,17 @@
                 new Student("Denis", "Dimitrov", "1306538", "+359878356831", "deni@yahoo.bg", new List<int>{5, 5, 5, 3, 4}, 1),
             };
 
+            // problem 9
             // var group2 = allStudents.Where(x => x.GroupNumber == 2); // with LINQ query
-
+            // problem 10
             var group1 = allStudents.TakeGroup(1); // extension methods
             // Print(group1);
 
-
+            // problem 11
             var stABV = allStudents.Where(st => st.Email.Contains("abv.bg")); // student user abv
+            // problem 12
             var stSofia = allStudents.Where(st => st.Tel.StartsWith("02") || st.Tel.StartsWith("+3592")); // student from Sofia student
-
+            // problem 13
             var stExellentMarks = allStudents.Where(st => st.Marks.Contains(6))  // anonymous
                 .Select
                 (st =>
@@ -48,9 +50,11 @@
             //    Console.WriteLine();
             //}
 
+            // problem 14
             var twoMarks = allStudents.TwoMarks(); // student with 2 marks
             // Print(twoMarks);
 
+            // problem 15
             var studentsFrom2006 = allStudents.Where(x => x.FN[4] == '0' && x.FN[5] == '6');
             var allMarksFrom2006 = new List<int>();      
 
@@ -60,6 +64,29 @@
             }
 
             // Console.WriteLine("All marks of the students, enrolled in 2006:\n{0}", string.Join(", ", allMarksFrom2006));
+
+            // problem 16
+            Group group1M = new Group(1, "Mathematics");
+            Group group2L = new Group(2, "Literature");
+            Group group3C = new Group(3, "Computer Science");
+
+
+            List<Group> groups = new List<Group> { group1M, group2L, group3C };
+
+            var studentsFromMathDpt =
+                from someGroup in groups
+                where someGroup.GroupNumber == 1
+                join student in allStudents on someGroup.GroupNumber equals student.GroupNumber
+                select new 
+                {         
+                    Name = student.FirstName + " " + student.LastName,
+                    Department = someGroup.DepartmentName
+                };
+
+            foreach (var student in studentsFromMathDpt)
+            {
+                Console.WriteLine(student);
+            }
         }
 
         private static void Print(IEnumerable<Student> group2)
