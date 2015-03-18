@@ -2,7 +2,7 @@
 namespace SolutionFrom3To5
 {
 
-    class Students
+    public class Students
     {
         private string firstName;
         private string lastName;
