@@ -1,4 +1,6 @@
-# CSharp-Part-1-Homework
+<h1 align="center">CSharp-Part-1-Homework</h1>
+
+<p align="center"><a href="http://academy.telerik.com/"><img src="https://raw.github.com/flextry/Telerik-Academy/master/Programming%20with%20C%23/Codes/Other/Telerik.png" /></a></p>
 
 01. [IntroToProgramming](https://github.com/karabeliov/Telerik-Academy/tree/master/Homeworks/C%231/01.Intro-Programming-Homework)      =>  [[Instructions]] (https://github.com/karabeliov/Telerik-Academy/blob/master/Homeworks/C%231/01.Intro-Programming-Homework/README.md)
 
