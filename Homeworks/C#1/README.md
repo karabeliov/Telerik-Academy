@@ -1,13 +1,15 @@
 # CSharp-Part-1-Homework
 
-01. IntroToProgramming     - [[Instructions]] (https://github.com/TelerikAcademy/CSharp-Part-1/blob/master/1.%20Introduction%20to%20Programming/README.md)
+01. [IntroToProgramming](https://github.com/karabeliov/Telerik-Academy/tree/master/Homeworks/C%231/01.Intro-Programming-Homework)      =>  [[Instructions]] (https://github.com/karabeliov/Telerik-Academy/blob/master/Homeworks/C%231/01.Intro-Programming-Homework/README.md)
 
-02. PrimitiveDataTypes     - [[Instructions]] (https://github.com/TelerikAcademy/CSharp-Part-1/blob/master/2.%20Data%20Types%20and%20Variables/README.md)
+02. [PrimitiveDataTypes](https://github.com/karabeliov/Telerik-Academy/tree/master/Homeworks/C%231/02.Primitive-Data-Types-Variables)      =>  [[Instructions]] (https://github.com/karabeliov/Telerik-Academy/blob/master/Homeworks/C%231/02.Primitive-Data-Types-Variables/README.md)
 
-03. OperatorsAndStatements - [[Instructions]] (https://github.com/TelerikAcademy/CSharp-Part-1/blob/master/3.%20Operators%20and%20Expressions/README.md)
+03. [OperatorsAndStatements](https://github.com/karabeliov/Telerik-Academy/tree/master/Homeworks/C%231/03.Operators-Expressions)  =>  [[Instructions]] (https://github.com/karabeliov/Telerik-Academy/blob/master/Homeworks/C%231/03.Operators-Expressions/README.md)
 
-04. ConsoleInputOutput     - [[Instructions]] (https://github.com/TelerikAcademy/CSharp-Part-1/blob/master/4.%20Console%20In%20and%20Out/README.md)
+04. [ConsoleInputOutput](https://github.com/karabeliov/Telerik-Academy/tree/master/Homeworks/C%231/04.Console-Input-Output)      =>  [[Instructions]] (https://github.com/karabeliov/Telerik-Academy/blob/master/Homeworks/C%231/04.Console-Input-Output/README.md)
 
-05. ConditionalStatements   - [[Instructions]] (https://github.com/TelerikAcademy/CSharp-Part-1/blob/master/5.%20Conditional%20Statements/README.md)
+05. [ConditionalStatements](https://github.com/karabeliov/Telerik-Academy/tree/master/Homeworks/C%231/05.ConditionalStatements)   => [[Instructions]] (https://github.com/karabeliov/Telerik-Academy/blob/master/Homeworks/C%231/05.ConditionalStatements/README.md)
 
-06. Loops                    - [[Instructions]] (https://github.com/TelerikAcademy/CSharp-Part-1/blob/master/6.%20Loops/README.md)
+06. [Loops](https://github.com/karabeliov/Telerik-Academy/tree/master/Homeworks/C%231/06.Loops)                     =>  [[Instructions]] (https://github.com/karabeliov/Telerik-Academy/blob/master/Homeworks/C%231/06.Loops/README.md)
+
+[Telerik Academy Exam 1 @ 2 February 2015 Morning](https://github.com/karabeliov/Telerik-Academy/tree/master/Homeworks/C%231/ExamCSharpPart1)                     =>  [[Instructions]] (http://bgcoder.com/Contests/202/Telerik-Academy-Exam-1-2-February-2015-Morning)
