@@ -1,4 +1,4 @@
-﻿namespace SchoolClasses
+﻿namespace _01.SchoolClasses
 {
     using System;
     using System.Collections.Generic;
@@ -6,11 +6,8 @@
     using System.Text;
     using System.Threading.Tasks;
 
-    public class SchoolClasses
+    public abstract class Person
     {
-        static void Main()
-        {
-
-        }
+        string Name { get; set; }
     }
 }
