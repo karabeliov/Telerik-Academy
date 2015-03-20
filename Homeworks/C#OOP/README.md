@@ -1,4 +1,6 @@
-# CSharp-OOP-Homework
+<p align="center"><a href="http://academy.telerik.com/"><img src="https://raw.github.com/flextry/Telerik-Academy/master/Programming%20with%20C%23/Codes/Other/Telerik.png" /></a></p>
+
+<h1 align="center">CSharp-OOP-Homework</h1>
 
 01. [DefiningClasses-Part I](https://github.com/karabeliov/Telerik-Academy/tree/master/Homeworks/C%23OOP/01.DefiningClassesPart1)     => [[Instructions]] (https://github.com/karabeliov/Telerik-Academy/blob/master/Homeworks/C%23OOP/01.DefiningClassesPart1/README.md)
 
