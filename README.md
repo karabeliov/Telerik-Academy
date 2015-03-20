@@ -1,7 +1,8 @@
 <h1 align="center">Telerik Academy 2015/2016</h1>
 
 <p align="center"><a href="http://academy.telerik.com/"><img src="https://raw.github.com/flextry/Telerik-Academy/master/Programming%20with%20C%23/Codes/Other/Telerik.png" /></a></p>
-<center>| Programming                                                                 | Web Development                                     | Software Technologies
+
+| Programming                                                                 | Web Development                                     | Software Technologies
 | --------------------------------------------------------------------------- | --------------------------------------------------- | -------------------------------------------------------------- |
 | [C# - Part I](https://github.com/karabeliov/Telerik-Academy/tree/master/Homeworks/C%231)                                                  | HTML Basics                                         | Databases                                                      |
 | [C# - Part II](https://github.com/karabeliov/Telerik-Academy/tree/master/Homeworks/C%232)                                                | CSS Styling                                         | Web Services and Cloud                                         |
@@ -10,4 +11,5 @@
 | C# - Data Structures and Algorithms                                         | JavaScript OOP                                     | ASP.NET MVC                                                    |
 | [Team Projects](https://github.com/karabeliov/Telerik-Academy/tree/master/Team-Projects)                                                                 | JavaScript Applications                             |  Team Projects                                                       | 
 |                                                                    | PHP Web-development                                 |                                                                |
-|                                                                             | Team Projects                                            |                                                               |</center>
+|                                                                             | Team Projects                                            |                                                               |
+
