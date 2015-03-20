@@ -11,5 +11,5 @@
 | C# - Data Structures and Algorithms                                         | JavaScript OOP)                                     | ASP.NET MVC                                                    |
 | Projects                                                                 | JavaScript Applications                             | Projects                                                       | 
 |                                                                    | PHP Web-development                                 |                                                                |
-|                                                                             | Projects                                            |                                                                |
+|                                                                             | Projects                                            |                                                               |
 
