@@ -9,7 +9,7 @@
 | [C# - Object-Oriented Programming](https://github.com/karabeliov/Telerik-Academy/tree/master/Homeworks/C%23OOP)        | JavaScript Fundamentals                             | JavaScript SPA                                                 |
 | C# - High-Quality Code						                              | JavaScript UI & DOM                                 | JavaScript End-to-End                                          |
 | C# - Data Structures and Algorithms                                         | JavaScript OOP)                                     | ASP.NET MVC                                                    |
-| C# - Exams                                                                  | JavaScript Applications                             | Projects                                                       | 
-| Projects                                                                    | PHP Web-development                                 |                                                                |
+| Projects                                                                 | JavaScript Applications                             | Projects                                                       | 
+|                                                                    | PHP Web-development                                 |                                                                |
 |                                                                             | Projects                                            |                                                                |
 
