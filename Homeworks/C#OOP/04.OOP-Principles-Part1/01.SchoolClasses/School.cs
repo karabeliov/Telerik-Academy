@@ -24,24 +24,28 @@
             private set { name = value; }
         }
 
-        internal void AddDisciplines(Disciplines csharp1)
+        public void AddDisciplines(Disciplines choose)
         {
-            throw new NotImplementedException();
+            listDisciplines.Add(choose);
         }
 
-        internal void AddTeachers(Teachers doncho)
+        public void AddTeachers(Teachers teacher)
         {
-            throw new NotImplementedException();
+            listTeachers.Add(teacher);
         }
 
-        internal void AddClasses(Classes first)
+        public void AddClasses(Classes clas)
         {
-            throw new NotImplementedException();
+            listClasses.Add(clas);
         }
 
         public override string ToString()
         {
-            return base.ToString();
+            StringBuilder result = new StringBuilder();
+            result.AppendLine(string.Format(", ", listClasses));
+            result.AppendLine(string.Format(", ", listTeachers));
+            result.AppendLine(string.Format(", ", listDisciplines));
+            return result.ToString();
         }
     }
 }

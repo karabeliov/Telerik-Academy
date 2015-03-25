@@ -9,7 +9,7 @@
     public class Classes : IComment
     {
         private string classes;
-
+        private List<Teachers> listTeachers = new List<Teachers>();
         public Classes()
         {
         }
@@ -49,9 +49,16 @@
             return string.Join(", ", comment);
         }
 
-        internal void AddTeacher(Teachers doncho)
+        public void AddTeachers(Teachers teacher)
         {
-            throw new NotImplementedException();
+            listTeachers.Add(teacher);
+        }
+
+        public override string ToString()
+        {
+            StringBuilder result = new StringBuilder();
+            result.AppendLine(string.Format(", ", listTeachers));
+            return result.ToString();
         }
     }
 }

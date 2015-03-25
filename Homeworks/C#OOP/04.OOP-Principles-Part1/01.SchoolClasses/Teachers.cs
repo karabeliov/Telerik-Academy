@@ -9,7 +9,7 @@
     public class Teachers : Person, IComment
     {
         private string name;
-
+        private List<Disciplines> listDisciplines = new List<Disciplines>();
         public Teachers(string name)
         {
             this.Name = name;
@@ -44,9 +44,16 @@
             return string.Join(", ", comment);
         }
 
-        internal void AddDiscipline(Disciplines csharp1)
+        public void AddDisciplines(Disciplines choose)
         {
-            throw new NotImplementedException();
+            listDisciplines.Add(choose);
+        }
+
+        public override string ToString()
+        {
+            StringBuilder result = new StringBuilder();
+            result.AppendLine(string.Format(", ", listDisciplines));
+            return result.ToString();
         }
     }
 }
