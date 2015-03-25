@@ -63,5 +63,12 @@
         {
             return string.Join(", ", comment);
         }
+
+        public override string ToString()
+        {
+            StringBuilder result = new StringBuilder();
+            result.AppendLine(Name + " " + ClassNumber);
+            return result.ToString();
+        }
     }
 }

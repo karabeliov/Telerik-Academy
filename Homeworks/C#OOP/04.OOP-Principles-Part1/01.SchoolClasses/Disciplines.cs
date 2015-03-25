@@ -84,5 +84,13 @@
         {
             return string.Join(", ", comment);
         }
+
+        public override string ToString()
+        {
+            StringBuilder result = new StringBuilder();
+            result.AppendLine(Name + " " + NumberLectures + " " + NumberExercises);
+            result.AppendLine("Comment: " + string.Join(", ", comment));
+            return result.ToString();
+        }
     }
 }

@@ -42,9 +42,9 @@
         public override string ToString()
         {
             StringBuilder result = new StringBuilder();
-            result.AppendLine(string.Format(", ", listClasses));
-            result.AppendLine(string.Format(", ", listTeachers));
-            result.AppendLine(string.Format(", ", listDisciplines));
+            result.AppendLine(string.Join(", ", listClasses));
+            result.AppendLine(string.Join(", ", listTeachers));
+            result.AppendLine(string.Join(", ", listDisciplines));
             return result.ToString();
         }
     }
