@@ -24,7 +24,7 @@
 
             set
             {
-                if (value < 2 && value < 6)
+                if (value < 2 || value > 6)
                 {
                     throw new ArgumentException("Grade must be between 2 and 6!");
                 }

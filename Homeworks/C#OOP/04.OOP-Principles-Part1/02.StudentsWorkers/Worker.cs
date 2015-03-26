@@ -63,7 +63,7 @@
 
             set
             {
-                if (value < 0 && value > 7)
+                if (value < 0 || value > 7)
                 {
                     throw new ArgumentException("Work day cannot be negative or bigger then 7!");
                 }
