@@ -11,9 +11,46 @@
         private double width;
         private double height;
 
-        public static double CalculateSurface(double width, double height)
+        public Shape(double width, double height)
         {
-            return width * height;
+            this.Width = width;
+            this.Height = height;
         }
+
+        public Shape(double side)
+        {
+            this.Width = side;
+            this.Height = Width;
+        }
+
+        public double Width
+        {
+            get { return width; }
+            private set 
+            {
+                if (value < 0)
+                {
+                    throw new ArgumentException("Width cannot be negative number");
+                }
+
+                width = value; 
+            }
+        }
+
+        public double Height
+        {
+            get { return height; }
+            private set 
+            {
+                if (value < 0)
+                {
+                    throw new ArgumentException("Height cannot be negative number");
+                }
+
+                height = value;
+            }
+        }
+
+        public abstract double CalculateSurface();
     }
 }

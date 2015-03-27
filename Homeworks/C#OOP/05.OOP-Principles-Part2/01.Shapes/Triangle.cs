@@ -8,29 +8,13 @@
 
     public class Triangle : Shape
     {
-        private double width;
-        private double height;
-
-        public Triangle(double width, double height)
+        public Triangle(double width, double height) : base(width, height)
         {
-            this.Width = width;
-            this.Height = height;
-        }
-        public double Width
-        {
-            get { return width; }
-            private set { width = value; }
         }
 
-        public double Height
+        public override double CalculateSurface()
         {
-            get { return height; }
-            private set { height = value; }
-        }
-
-        public virtual double CalculateSurface()
-        {
-            return (width * height) / 2;
+            return (base.Width * base.Height) / 2;
         }
     }
 }
