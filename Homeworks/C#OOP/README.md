@@ -12,5 +12,5 @@
 
 05. [OOP Principles - Part II](https://github.com/karabeliov/Telerik-Academy/tree/master/Homeworks/C%23OOP/05.OOP-Principles-Part2)   => [[Instructions]] (https://github.com/karabeliov/Telerik-Academy/blob/master/Homeworks/C%23OOP/05.OOP-Principles-Part2/README.md)
 
-06. [Common Type System]()                   => [[Instructions]] ()
+06. [Common Type System](https://github.com/karabeliov/Telerik-Academy/tree/master/Homeworks/C%23OOP/06.Common-Type-System)                   => [[Instructions]] (https://github.com/karabeliov/Telerik-Academy/blob/master/Homeworks/C%23OOP/06.Common-Type-System/README.md)
 
