@@ -8,5 +8,13 @@
 
     public class Individuals : Customers
     {
+
+        public Individuals(string name, string id, string address, DateTime birthday)
+            : base(name, id, address)
+        {
+            this.Birthday = birthday;
+        }
+
+        public DateTime Birthday { get; private set; }
     }
 }
