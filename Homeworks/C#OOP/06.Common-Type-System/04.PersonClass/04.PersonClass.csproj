@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{13778354-CE74-4F0D-866E-AF4803CF41C6}</ProjectGuid>
+    <ProjectGuid>{6FD28DD4-2CE5-47D1-9F5A-D21D222D4B14}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>_01.StudentClass</RootNamespace>
-    <AssemblyName>01.StudentClass</AssemblyName>
+    <RootNamespace>_04.PersonClass</RootNamespace>
+    <AssemblyName>04.PersonClass</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -41,7 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="StudentClass.cs" />
+    <Compile Include="Person.cs" />
+    <Compile Include="PersonClassMain.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
