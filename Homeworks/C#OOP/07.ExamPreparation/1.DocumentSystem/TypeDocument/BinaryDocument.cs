@@ -1,5 +1,6 @@
 ﻿namespace _1.DocumentSystem.TypeDocument
 {
+    using System.Collections.Generic;
     public abstract class BinaryDocument : Document, IDocument
     {
         public BinaryDocument(string name, string content = null, int size = 0)
@@ -20,6 +21,16 @@
             {
                 base.LoadProperty(key, value);
             }
+        }
+
+        public override void SaveAllProperties(System.Collections.Generic.IList<System.Collections.Generic.KeyValuePair<string, object>> output)
+        {
+            if (Size != 0)
+            {
+                output.Add(new KeyValuePair<string, object>("size", this.Size));
+            }
+
+            base.SaveAllProperties(output);
         }
     }
 }

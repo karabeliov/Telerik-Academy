@@ -1,5 +1,6 @@
 ﻿namespace _1.DocumentSystem.TypeDocument.BinaryTypeDoc
 {
+    using System.Collections.Generic;
     public abstract class MultimediaDocuments : BinaryDocument, IDocument
     {
         public MultimediaDocuments(string name, string content = null, int size = 0, int length = 0)
@@ -20,6 +21,16 @@
             {
                 base.LoadProperty(key, value);
             }
+        }
+
+        public override void SaveAllProperties(System.Collections.Generic.IList<System.Collections.Generic.KeyValuePair<string, object>> output)
+        {
+            if (Length != 0)
+            {
+                output.Add(new KeyValuePair<string, object>("length", this.Length));
+            }
+
+            base.SaveAllProperties(output);
         }
     }
 }

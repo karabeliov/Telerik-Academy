@@ -217,7 +217,28 @@
 
         private static void ChangeContent(string name, string content)
         {
-            // TODO
+            var editableDocs = documents.Where(d => d.Name == name);
+
+            if (editableDocs.Any())
+            {
+                foreach (var doc in editableDocs)
+                {
+                    var edit = doc as IEditable;
+                    if (edit != null)
+                    {
+                        edit.ChangeContent(content);
+                        Console.WriteLine("Document content changed: {0}", name);
+                    }
+                    else
+                    {
+                        Console.WriteLine("Document is not editable: {0}", name);
+                    }
+                }
+            }
+            else
+            {
+                Console.WriteLine("Document not found: {0}", name);
+            }
         }
 
         private static void AddDocument(string[] attributes, IDocument doc)

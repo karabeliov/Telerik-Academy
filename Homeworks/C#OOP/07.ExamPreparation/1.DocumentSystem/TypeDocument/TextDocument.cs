@@ -1,5 +1,6 @@
 ﻿namespace _1.DocumentSystem.TypeDocument
 {
+    using System.Collections.Generic;
     public class TextDocument : Document, IDocument, IEditable
     {
         public TextDocument(string name, string content = null, string charset = null)
@@ -25,6 +26,16 @@
         public void ChangeContent(string newContent)
         {
             this.Content = newContent;
+        }
+
+        public override void SaveAllProperties(System.Collections.Generic.IList<System.Collections.Generic.KeyValuePair<string, object>> output)
+        {
+            if (Charset != null)
+            {
+                output.Add(new KeyValuePair<string, object>("charset", this.Charset));
+            }
+
+            base.SaveAllProperties(output);
         }
     }
 }
