@@ -4,7 +4,7 @@
 
 | Programming                                                                 | Web Development                                     | Software Technologies
 | --------------------------------------------------------------------------- | --------------------------------------------------- | -------------------------------------------------------------- |
-| [C# - Part I](https://github.com/karabeliov/Telerik-Academy/tree/master/Homeworks/C%231)                                                  | HTML Basics                                         | Databases                                                      |
+| [C# - Part I](https://github.com/karabeliov/Telerik-Academy/tree/master/Homeworks/C%231)                                                  | [HTML Basics] (https://github.com/karabeliov/Telerik-Academy/tree/master/Homeworks/HTML)                                         | Databases                                                      |
 | [C# - Part II](https://github.com/karabeliov/Telerik-Academy/tree/master/Homeworks/C%232)                                                | CSS Styling                                         | Web Services and Cloud                                         |
 | [C# - Object-Oriented Programming](https://github.com/karabeliov/Telerik-Academy/tree/master/Homeworks/C%23OOP)        | JavaScript Fundamentals                             | JavaScript SPA                                                 |
 | C# - High-Quality Code						                              | JavaScript UI & DOM                                 | JavaScript End-to-End                                          |
