@@ -2,4 +2,4 @@
 
 <h1 align="center">HTML-Homework</h1>
 
-01. [Fundamentals](https://github.com/karabeliov/Telerik-Academy/tree/master/Homeworks/C%23OOP/01.DefiningClassesPart1)     => [[Instructions]] (https://github.com/karabeliov/Telerik-Academy/blob/master/Homeworks/C%23OOP/01.DefiningClassesPart1/README.md)
+01. [Fundamentals](https://github.com/karabeliov/Telerik-Academy/tree/master/Homeworks/HTML)     => [[Instructions]] (https://github.com/karabeliov/Telerik-Academy/blob/master/Homeworks/HTML/README.md)
