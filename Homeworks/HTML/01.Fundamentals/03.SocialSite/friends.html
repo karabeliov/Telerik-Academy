@@ -1,41 +1,55 @@
+<!Doctype html>
 <html>
 <head>
-    <title>Nested Lists</title>
+    <meta charset="UTF-8">
+    <title>Doge Social Network - Friends</title>
+    <style>
+        body {
+            background-color: skyblue;
+        }
+    </style>
 </head>
 <body>
+    <header>
+        <h1>Doge Social Network</h1>
+    </header>
+    <nav>
+        <ul style="list-style-type: disc">
+            <li>
+                <a href="home.html">Home</a>
+            </li>
+            <li>
+                <a href="profile.html">Profile</a>
+            </li>
+            <li>
+                <a href="friends.html">Friends</a>
+            </li>
+        </ul>
+    </nav>
+
+    <hr />
     <section>
+        
+        <h2>Friends of Doge</h2>
 
-        <p>Preceding Text</p>
+        <hr />
 
-        <ol type="I">
-            <li>List Item 1</li>
-                    <ol type="a">
-                        <li>Nested Item 1.1</li>
-                        <li>Nested Item 1.2</li>
-                    </ol>
-            <li>List Item 2</li>
-                    <ol type="1">
-                        <li>Nested Item 2.1</li>
-                        <li>Nested Item 2.2</li>
-                                <ul style="list-style-type: circle">
-                                    <li>Nested Item 2.2.1</li>
-                                    <li>Nested Item 2.2.2</li>
-                                            <ul style="list-style-type: square">
-                                                <li>Nested Item 2.2.2.1</li>
-                                                <li>Nested Item 2.2.2.2</li>
-                                            </ul>
-                                    <li>Nested Item 2.2.3</li>
-                                </ul>
-                        <li>Nested Item 2.3</li>
-                    </ol>
-            <li>List Item 3</li>
-                <ul style="list-style-type: disc">
-                    <li>Nested Item 3.1</li>
-                    <li>Nested Item 3.2</li>
-                    <li>Nested Item 3.3</li>
-                </ul>
-        </ol>
+        <dl>
+            <dt>
+                <em>Such Friend</em>
+            </dt>
+            <dd>best friend</dd>
 
+            <dt>
+                <em>Many Friends</em>
+            </dt>
+            <dd>unknown</dd>
+
+            <dt>
+                <em>Wow</em>
+            </dt>
+            <dd>yeah, right</dd>
+        </dl>
     </section>
 </body>
 </html>
