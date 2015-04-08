@@ -1,0 +1,119 @@
+﻿<!Doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Tables</title>
+    <style>
+        .abc {
+            border: 1px solid;
+            width: 160px;
+        }
+
+            .abc td {
+                border: 1px solid;
+                text-align: center;
+            }
+
+        #hfruits {
+            margin-left: 150px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Problem 1. HTML Tables</h1>
+    </header>
+
+    <section>
+        <div id="fruits">
+            <h1 id="hfruits">
+                <em>Fresh Fruits</em>
+            </h1>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            It has long been known that diet <br />
+                            that includes at least a few <br />
+                            servings of fresh fruits every day <br />
+                            will help keep you healthy, fit and <br />
+                            trim
+                        </td>
+                        <td>
+                            <img src="file/fruits.png" alt="Fresh fruits" />
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div id="table">
+            <table class="abc">
+                <colgroup>
+                    <col>
+                </colgroup>
+                <tbody>
+                    <tr class="row1">
+                        <td colspan="3" style="text-align: left">
+                            Title goes here
+                        </td>
+                        <td>
+                            A
+                        </td>
+                        <td style="text-align: right">
+                            B
+                        </td>
+                    </tr>
+                    <tr class="row2">
+                        <td rowspan="3" width="40" style="text-align: left">
+                            C
+                        </td>
+                        <td>
+                            D
+                        </td>
+                        <td>
+                            E
+                        </td>
+                        <td>
+                            F
+                        </td>
+                        <td style="text-align: right">
+                            G
+                        </td>
+                    </tr>
+                    <tr class="row3">
+                        <td>
+                            H
+                        </td>
+                        <td colspan="2">
+                            I
+                        </td>
+                        <td rowspan="2" style="text-align: right" valign="bottom">
+                            J
+                        </td>
+                    </tr>
+                    <tr class="row5">
+                        <td>
+                            K
+                        </td>
+                        <td>
+                            L
+                        </td>
+                        <td>
+                            M
+                        </td>
+                    </tr>
+                    <tr class="row6">
+                        <td style="text-align: right">
+                            N
+                        </td>
+                        <td colspan="4">
+                            O
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+</body>
+</html>
