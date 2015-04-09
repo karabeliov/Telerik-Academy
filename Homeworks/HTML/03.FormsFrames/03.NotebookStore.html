@@ -1,0 +1,75 @@
+﻿<!Doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Notebook store</title>
+    <style>
+       .head {
+           font-size: 20px;
+           text-align: center;
+       }
+
+       .sidebar {
+           float: right;
+       }
+    </style>
+    <script>
+        function outputMinPrice(vol) {
+            document.querySelector('#minprice').value = vol;
+        }
+
+        function outputMaxPrice(vol) {
+            document.querySelector('#maxprice').value = vol;
+        }
+
+        function outputMinRAM(vol) {
+            document.querySelector('#minram').value = vol;
+        }
+
+        function outputMaxRAM(vol) {
+            document.querySelector('#maxram').value = vol;
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>3. Notebook store</h1>
+    </header>
+
+    <section>
+        <fieldset>
+            <div class="head">
+                <a href="#">Apple</a>
+                <a href="#">Toshiba</a>
+                <a href="#">Lenovo</a>
+                <a href="#">Dell</a>
+                <a href="#">Asus</a>
+                <a href="#">Acer</a>
+                <a href="#">HP</a>
+            </div>
+
+            <fieldset>
+                <div class="sidebar">
+                    <p>
+                        Min price: <output for=minprice id=minprice>1000</output>USD <br />
+                        <input id="sminprice" type="range" min="500" max="1500" step="50" oninput="outputMinPrice(value)" />
+                    </p>
+                    <p>
+                        Max price: <output for=maxprice id=maxprice>1000</output>USD <br />
+                        <input id="smaxprice" type="range" min="500" max="1500" step="50" oninput="outputMaxPrice(value)" />
+                    </p>
+
+                    <p>
+                        Min RAM: <output for=minram id=minram>12</output>GB <br />
+                        <input id="sminram" type="range" min="4" max="16" step="4" oninput="outputMinRAM(value)" />
+                    </p>
+                    <p>
+                        Max RAM: <output for=maxram id=maxram>12</output>GB <br />
+                        <input id="smaxram" type="range" min="4" max="16" step="4" oninput="outputMaxRAM(value)" />
+                    </p>
+                </div>
+            </fieldset>
+        </fieldset>
+    </section>
+</body>
+</html>
