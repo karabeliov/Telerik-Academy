@@ -1,0 +1,136 @@
+#calculator {
+    width: 35%;
+    height: 410px;
+    background-color: greenyellow;
+    opacity: 0.8;
+}
+
+header img {
+    margin: 1%;
+}
+
+#title {
+    margin-left: 35%;
+    font-size: 15px;
+}
+
+
+header button {
+    border: none;
+    font-size: large;
+    background-color: greenyellow;
+}
+
+#min {
+    margin-left: 25%;
+    font-weight: bold;
+}
+
+    #min:hover {
+        border: none;
+        background-color: dodgerblue;
+    }
+
+#close:hover {
+    border: none;
+    background-color: red;
+}
+
+nav {
+    background-color: ghostwhite;
+    width: 95%;
+      margin-top: -10px;
+    margin-left: 2.5%;
+    margin-bottom: -3.3%;
+}
+
+    nav ul {
+        padding-left: 2%;
+    }
+
+        nav ul li {
+            display: inline;
+            padding-right: 2%;
+            list-style-type: none;
+        }
+
+#content {
+    background-color: skyblue;
+    width: 95%;
+    height: 350px;
+    margin-left: 2.5%;
+}
+
+#output {
+    margin-top: 1%;
+    margin-left: 2%;
+    width: 95%;
+    height: 40px;
+    border: 1px solid;
+    border-radius: 2px; 
+    text-align: end;
+    font-size: x-large;
+}
+
+#binary {
+    padding-left: 2%;
+    border: 1px solid;
+    width: 95%;
+    margin-left: 2.5%;
+    margin-top: 1%;
+    border-radius: 2px; 
+}
+
+#binary td {
+    padding: 0;
+    padding-right: 4%;
+}
+
+#nums {
+    display: inline-block;
+    width: 25%;
+}
+
+#nums > div {
+    margin-top: 7%;
+    margin-left: 12%;
+    padding: 5% 0 5% 5%;
+    border-radius: 2px;
+    border: 1px solid;
+}
+
+#controls {
+    margin-left: 0.8%;
+    position: absolute;
+    display: inline;
+    width: 26%;
+}
+
+#controls > div {
+    display: block;
+}
+
+#controls button {
+    width: 10%;
+    height: 27px;
+    margin-top: 2%;
+    vertical-align: top;
+    border-style: outset;
+    border-radius: 3px;
+    background-color: powderblue;
+    font-size: 12px;
+}
+
+#controls button:hover {
+    background-color: gold;
+}
+
+#controls button:active {
+    border-style: inset;
+}
+
+#controls button:disabled {
+    opacity: 0.5;
+}
+
+

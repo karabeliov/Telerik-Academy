@@ -1,0 +1,166 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Windows Calculator</title>
+    <link href="style.css" rel="stylesheet" />
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script>
+        function s(v) { document.getElementById('output').value = v }
+        function c(v) { document.getElementById('output').value = v }
+        function a(v) { document.getElementById('output').value += v }
+        function e() { try { s(eval(document.getElementById('output').value)) } catch (e) { s('Error') } }
+    </script>
+</head>
+<body>
+    <div id="calculator">
+        <header>
+            <img src="pic/cal.png" alt="cal" align="top" />
+            <span id="title">Калкулатор</span>
+            <button id="min"><sub>&ndash;</sub></button>
+            <button id="max" disabled>&#9633;</button>
+            <button id="close">x</button>
+        </header>
+        <nav>
+            <ul>
+                <li>View</li>
+                <li>Edit</li>
+                <li>Help</li>
+            </ul>
+        </nav>
+        <section id="content">
+            <div id="result">
+                <input type="text" id="output" value="" onfocus="this.blur()" />
+            </div>
+            <table id="binary">
+                <tr>
+                    <td>0000</td>
+                    <td>0000</td>
+                    <td>0000</td>
+                    <td>0000</td>
+                    <td>0000</td>
+                    <td>0000</td>
+                    <td>0000</td>
+                    <td>0000</td>
+                </tr>
+                <tr>
+                    <td align="left">63</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td align="left">47</tdalign>
+                    <td></td>
+                    <td></td>
+                    <td align="right">32</td>
+                </tr>
+                <tr>
+                    <td>0000</td>
+                    <td>0000</td>
+                    <td>0000</td>
+                    <td>0000</td>
+                    <td>0000</td>
+                    <td>0000</td>
+                    <td>0000</td>
+                    <td>0000</td>
+                </tr>
+                <tr>
+                    <td align="left">31</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td align="left">15</td>
+                    <td></td>
+                    <td></td>
+                    <td align="right">0</td>
+                </tr>
+            </table>
+            <div id="nums">
+                <div>
+                    <input type="radio" name="num1" checked /> Hex <br />
+                    <input type="radio" name="num1" /> Dec <br />
+                    <input type="radio" name="num1" /> Oct <br />
+                    <input type="radio" name="num1" /> Bin <br />
+                </div>
+                <div>
+                    <input type="radio" name="num2" checked /> QWord <br />
+                    <input type="radio" name="num2" /> DWord <br />
+                    <input type="radio" name="num2" /> Word <br />
+                    <input type="radio" name="num2" /> Byte <br />
+                </div>
+            </div>
+            <div id="controls">
+                <div>
+                    <button disabled></button>
+                    <button>Mod</button>
+                    <button>A</button>
+                    <button onclick="s('Just....')">MC</button>
+                    <button onclick="s('Just....')">MR</button>
+                    <button onclick="s('Just....')">MS</button>
+                    <button onclick="s('....do..')">M+</button>
+                    <button onclick="s('......it')">M-</button>
+                </div>
+
+                <div>
+                    <button onclick="a('(')">(</button>
+                    <button onclick="a(')')">)</button>
+                    <button>B</button>
+                    <button>&larr;</button>
+                    <button onclick="s('')">CE</button>
+                    <button onclick="c('')">C</button>
+                    <button>&plusmn;</button>
+                    <button>&radic;</button>
+                </div>
+
+                <div>
+                    <button>RoL</button>
+                    <button>RoR</button>
+                    <button>C</button>
+                    <button type="button" class="calc-button" onclick="a('7')">7</button>
+                    <button type="button" class="calc-button" onclick="a('8')">8</button>
+                    <button type="button" class="calc-button" onclick="a('9')">9</button>
+                    <button onclick="a('/')">/</button>
+                    <button>%</button>
+                </div>
+
+                <div>
+                    <button>Or</button>
+                    <button>Xor</button>
+                    <button>D</button>
+                    <button type="button" class="calc-button" onclick="a('4')">4</button>
+                    <button type="button" class="calc-button" onclick="a('5')">5</button>
+                    <button type="button" class="calc-button" onclick="a('6')">6</button>
+                    <button onclick="a('*')">*</button>
+                    <button>1 &frasl;<sub>x</sub></button>
+                </div>
+
+                <div>
+                    <button>Lsh</button>
+                    <button>Rsh</button>
+                    <button>E</button>
+                    <button type="button" class="calc-button" onclick="a('1')">1</button>
+                    <button type="button" class="calc-button" onclick="a('2')">2</button>
+                    <button type="button" class="calc-button" onclick="a('3')">3</button>
+                    <button onclick="a('-')">-</button>
+                    <button onclick="e()" style="position: absolute; margin-left: 5px; height: 61px">=</button>
+                </div>
+
+                <div>
+                    <button>Not</button>
+                    <button>And</button>
+                    <button>F</button>
+                    <button onclick="a('0')" style="width: 21.5%">0</button>
+                    <button onclick="a('.')">.</button>
+                    <button onclick="a('+')">+</button>
+                </div>
+
+
+
+                <!--<button onclick="myFunction()" id="button" value="3">3</button>
+                <button onclick="myFunction()" id="button" value="4">4</button>
+                <button onclick="myFunction()" id="button" value="5">5</button>-->
+            </div>
+        </section>
+    </div>
+</body>
+</html>
