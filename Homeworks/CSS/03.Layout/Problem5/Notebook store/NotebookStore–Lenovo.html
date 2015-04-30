@@ -1,0 +1,210 @@
+﻿<!Doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Notebook store</title>
+    <link href="/style.css" rel="stylesheet" />
+
+    <script>
+        function outputMinPrice(vol) {
+            document.querySelector('#minprice').value = vol;
+        }
+
+        function outputMaxPrice(vol) {
+            document.querySelector('#maxprice').value = vol;
+        }
+
+        function outputMinRAM(vol) {
+            document.querySelector('#minram').value = vol;
+        }
+
+        function outputMaxRAM(vol) {
+            document.querySelector('#maxram').value = vol;
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Notebook Lenovo</h1>
+    </header>
+
+    <section>
+        <fieldset>
+            <div class="head">
+                <a href="/LaptopStore.html">All</a>
+                <a href="NotebookStore–Apple.html">Apple</a>
+                <a href="NotebookStore–Toshiba.html">Toshiba</a>
+                <a href="NotebookStore–Lenovo.html">Lenovo</a>
+                <a href="NotebookStore–Dell.html">Dell</a>
+                <a href="NotebookStore–Asus.html">Asus</a>
+                <a href="NotebookStore–Acer.html">Acer</a>
+                <a href="NotebookStore–HP.html">HP</a>
+            </div>
+            <fieldset>
+                <div class="sidebar">
+                    <p>
+                        Min price: <output for=minprice id=minprice>1000</output>USD <br />
+                        <input id="sminprice" type="range" min="500" max="1500" step="50" oninput="outputMinPrice(value)" />
+                    </p>
+                    <p>
+                        Max price: <output for=maxprice id=maxprice>1000</output>USD <br />
+                        <input id="smaxprice" type="range" min="500" max="1500" step="50" oninput="outputMaxPrice(value)" />
+                    </p>
+
+                    <p>
+                        Min RAM: <output for=minram id=minram>12</output>GB <br />
+                        <input id="sminram" type="range" min="4" max="16" step="4" oninput="outputMinRAM(value)" />
+                    </p>
+                    <p>
+                        Max RAM: <output for=maxram id=maxram>12</output>GB <br />
+                        <input id="smaxram" type="range" min="4" max="16" step="4" oninput="outputMaxRAM(value)" />
+                    </p>
+                </div>
+                <fieldset class="article">
+                    <div class="table">
+                        <div class="trow">
+                            <div class="tcell">
+                                <fieldset class="product">
+                                    <legend id="name">Apple MacBook Air</legend>
+                                    <div class="table">
+                                        <div class="trow">
+                                            <div class="tcell">
+                                                <img src="pic/lenovo.jpg" width="200" alt="Alternate Text" />
+                                            </div>
+                                            <div class="tcell" id="info">
+                                                64GB SSD <br />
+                                                2GB DDR <br />
+                                                Intel Core i5
+                                            </div>
+                                        </div>
+                                        <div class="trow">
+                                            <div class="tcell" id="price">
+                                                1300 USD
+                                            </div>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </div>
+                            <div class="tcell">
+                                <fieldset class="product">
+                                    <legend id="name">Toshiba Satellite</legend>
+                                    <div class="table">
+                                        <div class="trow">
+                                            <div class="tcell">
+                                                <img src="pic/lenovo.jpg" width="200" alt="Alternate Text" />
+                                            </div>
+                                            <div class="tcell" id="info">
+                                                64GB SSD <br />
+                                                2GB DDR <br />
+                                                Intel Core i5
+                                            </div>
+                                        </div>
+                                        <div class="trow">
+                                            <div class="tcell" id="price">
+                                                800 USD
+                                            </div>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="trow">
+                            <div class="tcell">
+                                <fieldset class="product">
+                                    <legend id="name">Lenovo Ideapad</legend>
+                                    <div class="table">
+                                        <div class="trow">
+                                            <div class="tcell">
+                                                <img src="pic/lenovo.jpg" width="200" alt="Alternate Text" />
+                                            </div>
+                                            <div class="tcell" id="info">
+                                                64GB SSD <br />
+                                                2GB DDR <br />
+                                                Intel Core i5
+                                            </div>
+                                        </div>
+                                        <div class="trow">
+                                            <div class="tcell" id="price">
+                                                1000 USD
+                                            </div>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </div>
+                            <div class="tcell">
+                                <fieldset class="product">
+                                    <legend id="name">Dell Inspiron</legend>
+                                    <div class="table">
+                                        <div class="trow">
+                                            <div class="tcell">
+                                                <img src="pic/lenovo.jpg" width="200" alt="Alternate Text" />
+                                            </div>
+                                            <div class="tcell" id="info">
+                                                64GB SSD <br />
+                                                2GB DDR <br />
+                                                Intel Core i5
+                                            </div>
+                                        </div>
+                                        <div class="trow">
+                                            <div class="tcell" id="price">
+                                                1000 USD
+                                            </div>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="trow">
+                            <div class="tcell">
+                                <fieldset class="product">
+                                    <legend id="name">Asus ZenBook</legend>
+                                    <div class="table">
+                                        <div class="trow">
+                                            <div class="tcell">
+                                                <img src="pic/lenovo.jpg" width="200" alt="Alternate Text" />
+                                            </div>
+                                            <div class="tcell" id="info">
+                                                64GB SSD <br />
+                                                2GB DDR <br />
+                                                Intel Core i5
+                                            </div>
+                                        </div>
+                                        <div class="trow">
+                                            <div class="tcell" id="price">
+                                                1200 USD
+                                            </div>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </div>
+                            <div class="tcell">
+                                <fieldset class="product">
+                                    <legend id="name">HP Pavilion</legend>
+                                    <div class="table">
+                                        <div class="trow">
+                                            <div class="tcell">
+                                                <img src="pic/lenovo.jpg" width="200" alt="Alternate Text" />
+                                            </div>
+                                            <div class="tcell" id="info">
+                                                64GB SSD <br />
+                                                2GB DDR <br />
+                                                Intel Core i5
+                                            </div>
+                                        </div>
+                                        <div class="trow">
+                                            <div class="tcell" id="price">
+                                                900 USD
+                                            </div>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </div>
+
+                </fieldset>
+            </fieldset>
+        </fieldset>
+    </section>
+</body>
+</html>

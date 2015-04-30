@@ -1,0 +1,47 @@
+
+.head {
+    font-size: 20px;
+    text-align: center;
+}
+
+.sidebar {
+    float: right;
+    padding-right: 3%;
+    margin-right: 3%;
+}
+
+.article {
+    width: 70%;
+}
+
+.product {
+    width: 70%;
+}
+
+    .product #name {
+        text-align: center;
+        font-size: 18px;
+    }
+
+.table {
+    margin-left: 3%;
+    width: 100%;
+    display: table;
+}
+
+.trow {
+    display: table-row;
+}
+
+.tcell {
+    display: table-cell;
+}
+
+#price {
+    text-align: center;
+    font-size: 20px;
+}
+
+#info {
+    font-size: 18px;
+}

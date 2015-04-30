@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #1e5799; /* Old browsers */
+    background: -moz-linear-gradient(left, #1e5799 0%, #2989d8 23%, #207cca 77%, #7db9e8 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#1e5799), color-stop(23%,#2989d8), color-stop(77%,#207cca), color-stop(100%,#7db9e8)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left, #1e5799 0%,#2989d8 23%,#207cca 77%,#7db9e8 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left, #1e5799 0%,#2989d8 23%,#207cca 77%,#7db9e8 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left, #1e5799 0%,#2989d8 23%,#207cca 77%,#7db9e8 100%); /* IE10+ */
+    background: linear-gradient(to right, #1e5799 0%,#2989d8 23%,#207cca 77%,#7db9e8 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=1 ); /* IE6-9 */
+    background-repeat: repeat-y;
+}
+
+#category {
+    background-color: #EEEEEE;
+    float: left;
+    margin: 5% 35%;
+    border-radius: 5px;
+    width: 31%;
+    font-family: Arial;
+    font-size: 13px;
+}
+
+    #category h2 {
+        margin: 15px;
+        font-size: 16px;
+        font-weight: normal;
+    }
+
+.post {
+    position: relative;
+    background-color: white;
+    border: 1px solid gray;
+    margin: 35px 15px;
+    margin-right: 10px;
+    padding: 15px;
+}
+
+    .post:last-child {
+        margin-bottom: 20px;
+    }
+
+    .post > img {
+        display: inline-block;
+        float: left;
+        margin-right: 15px;
+    }
+
+    .post .buttons {
+        margin-top: 18px;
+        height: 25px;
+        text-align: right;
+    }
+
+        .post .buttons > img {
+            position: relative;
+        }
+
+.listen {
+    position: absolute;
+    z-index: 1;
+    color: white;
+    margin: 5px 5px;
+    right: 90px;
+}
+
+.add {
+    position: absolute;
+    z-index: 1;
+    color: white;
+    margin: 5px 5px;
+    right: 25px;
+}

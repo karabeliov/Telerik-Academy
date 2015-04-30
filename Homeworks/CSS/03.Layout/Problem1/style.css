@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+.toplist {
+    margin: 5%;
+}
+
+    .toplist li:hover .sublist {
+        display: block;
+    }
+
+.sublist {
+    margin-left: 1%;
+    display: none;
+    color: darkgray;
+    text-decoration: none;
+}
