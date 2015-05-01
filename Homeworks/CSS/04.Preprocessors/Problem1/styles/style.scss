@@ -1,0 +1,35 @@
+@import "main.css";
+
+@mixin header-gradient($start, $finish) {
+    background: -webkit-linear-gradient($start, $finish); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient($start, $finish); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient($start, $finish); /* For Firefox 3.6 to 15 */
+    background: linear-gradient($start, $finish); /* Standard syntax */
+}
+
+@mixin clearfix {
+    content: "\0020";
+    display: block;
+    height: 0;
+    overflow: hidden;
+    clear: both;
+}
+
+$body-color: #9215F2;
+$body-font: 14px normal Arial;
+
+$start-color: rgb(215, 145, 255);
+$finish-color: rgb(146, 21, 242);
+
+body {
+    background-color: $body-color;
+    font: $body-font;
+
+    header {
+        @include header-gradient($start-color, $finish-color);
+    }
+
+    & > footer {
+        @include clearfix;
+    }
+}

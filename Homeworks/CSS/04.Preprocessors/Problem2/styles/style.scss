@@ -1,0 +1,36 @@
+body {
+    ul {
+        list-style-type: none;
+        position: relative;
+        margin-left: 200px;
+        li {
+            display: inline-block;
+
+            label {
+                & > img {
+                    width: 100px;
+                }
+
+                & span {
+                    display: none;
+                    position: absolute;
+                    top: 90px;
+                    left: 100px;
+                }
+
+                input[type=radio] {
+                    display: none;
+                }
+
+                input[type=radio]:checked + span {
+                    display: block;
+
+                    img {
+                        width: 700px;
+                        border-radius: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

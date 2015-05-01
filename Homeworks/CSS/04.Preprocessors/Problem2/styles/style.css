@@ -1,0 +1,22 @@
+﻿body ul {
+  list-style-type: none;
+  position: relative;
+  margin-left: 200px; }
+  body ul li {
+    display: inline-block; }
+    body ul li label > img {
+      width: 100px; }
+    body ul li label span {
+      display: none;
+      position: absolute;
+      top: 90px;
+      left: 100px; }
+    body ul li label input[type=radio] {
+      display: none; }
+    body ul li label input[type=radio]:checked + span {
+      display: block; }
+      body ul li label input[type=radio]:checked + span img {
+        width: 700px;
+        border-radius: 10px; }
+
+/*# sourceMappingURL=style.css.map */
