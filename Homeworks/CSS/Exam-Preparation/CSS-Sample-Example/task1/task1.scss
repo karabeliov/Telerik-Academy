@@ -1,0 +1,155 @@
+/* RESET STYLES */
+body, header, section, footer, article, h1, h2, h3, h4, h5, h6, input, button, label, p, fieldset, nav, ul, li, a, span, strong, em, img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+div, h1, h3, h4, h5, h6, header, footer, body, section, nav, article, aside {
+    display: block;
+}
+
+/* CLEARFIX */
+.clearfix {
+    content: "\0020";
+    display: block;
+    height: 0;
+    overflow: hidden;
+    clear: both;
+}
+
+@mixin clearfix-full {
+    zoom: 1;
+
+    &:after {
+        @extend .clearfix;
+    }
+
+    &:before {
+        @extend .clearfix;
+    }
+}
+
+/* LINEAR-GRADIENT */
+@mixin linear-gradient($from-color, $from:0%, $to-color,$to:100%, $repeat: none) {
+    background-image: -webkit-linear-gradient(top, $from-color $from, $to-color $to);
+    background-image: -moz-linear-gradient(top, $from-color $from, $to-color $to);
+    background-image: -ms-linear-gradient(top, $from-color $from, $to-color $to);
+    background-image: -o-linear-gradient(top, $from-color $from, $to-color $to);
+    background-image: linear-gradient(to bottom, $from-color $from, $to-color $to);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{$from}', endColorstr='#{$to}',GradientType=0 );
+    background-repeat: $repeat;
+}
+
+/* BODY */
+$body-font: 14px normal Arial;
+$body-font-color: white;
+
+/* NAV */
+$nav-href-font-color: white;
+$nav-nested-href-hover-font-color: #a8a8a8;
+$nav-sub-ul-lists-bg-color: rgba(179, 94, 243, 0.9);
+$nav-sub-ul-href-hover-color: #fff;
+
+/* SECTION ARTICLE */
+$section-font-color: black;
+$article-border: 1px solid black;
+$time-font-family: Consolas, 'Lucida Console', 'DejaVu Sans Mono', monospace;
+
+/* ASIDE */
+$aside-li-border: 1px solid black;
+$aside-li-border-radius: 5px;
+$aside-p-href-color: #aaaaaa;
+$aside-p-strong-color: #cccccc;
+$aside-p-em-color: $aside-p-strong-color;
+$aside-li-bg-image: url('../img/li-dot.png') no-repeat;
+
+/* INPUT */
+$input-border: 1px solid #603382;
+
+/* BUTTON */
+$button-border: $input-border;
+$button-hover-bg-color: #8949b9;
+
+
+body {
+    font-size: 32px;
+    font-family: sans-serif;
+    color: #ffffff;
+
+    #wrapper {
+        width: 1024px;
+        height: 768px;
+
+        header {
+            @include linear-gradient(#002C43,#76D1FF);
+            height: 200px;
+            position: relative;
+
+            nav {
+                padding-top: 50px;
+                padding-left: 50px;
+
+                ul {
+                    li {
+                        display: inline-block;
+                        padding: 5px 10px;
+                        border-radius: 15px;
+
+                        a {
+                            color: black;
+                            text-decoration: none;
+                        }
+
+                        & > ul {
+                            display: none;
+                        }
+
+                        &:hover {
+                            background-color: rgba(11, 80, 115, 0.4);
+                        }
+                    }
+
+                    li.selected {
+                        background-color: #255269;
+
+                        & > ul {
+                            display: inline-block;
+                            position: absolute;
+
+                            li {
+                                margin-left: -10px;
+                                margin-right: 10px;
+                                &:hover > ul {
+                                    @include linear-gradient(white, #77D1FF);
+                                    display: inline-block;
+                                    position: absolute;
+                                    margin-left: -10px;
+                                    padding: 15px;
+                                    padding-left: 35px;
+                                    padding-right: 15px;
+                                    width: 330px;
+                                    border-radius: 15px;
+
+                                    & > li {
+                                        border-radius: 0;
+                                        border-bottom: 1px solid black;
+                                        margin-right: 0;
+                                        &:last-of-type {
+                                            border-bottom: none;
+                                        }
+
+                                        &:hover {
+                                            border-radius: 15px;
+                                            background-color: rgb(62, 126, 159);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

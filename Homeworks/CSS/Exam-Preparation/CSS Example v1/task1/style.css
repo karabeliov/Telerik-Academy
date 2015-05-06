@@ -1,0 +1,134 @@
+/* Reset Stylesheet */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+body {
+  line-height: 1; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+nav ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none; }
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none; }
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+del {
+  text-decoration: line-through; }
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0; }
+
+input, select {
+  vertical-align: middle; }
+
+/* CLEARFIX */
+.clearfix, body #wrapper .clear:after, body #wrapper .clear:before {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both; }
+
+/* End Reset Stylesheet */
+body {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  body #wrapper {
+    width: 960px;
+    margin: 0 auto; }
+    body #wrapper header {
+      padding: 15px;
+      height: 20px;
+      background-image: url('images/header-bg.png');
+      background-repeat: repeat; }
+      body #wrapper header > h1 {
+        font-size: 16px;
+        display: inline-block;
+        color: #575E5B;
+        text-transform: uppercase; }
+      body #wrapper header #nav {
+        font-size: 14px;
+        display: inline-block;
+        float: right;
+        color: #575E5B; }
+        body #wrapper header #nav li {
+          float: left;
+          padding-right: 20px; }
+          body #wrapper header #nav li:last-of-type {
+            padding-right: 8px; }
+    body #wrapper #searchBar {
+      background-color: black;
+      padding: 10px 8px;
+      vertical-align: middle;
+      font-size: 16px; }
+      body #wrapper #searchBar a {
+        color: #C6C6C6;
+        font-size: 14px; }
+      body #wrapper #searchBar #archives {
+        display: inline-block;
+        color: #C6C6C6; }
+      body #wrapper #searchBar #search {
+        display: inline-block;
+        float: right; }
+    body #wrapper #content {
+      font-size: 14px;
+      color: #575E5B;
+      width: 970px; }
+      body #wrapper #content > h1 {
+        font-size: 24px;
+        color: #575E5B;
+        padding: 20px 0; }
+      body #wrapper #content article p:first-of-type {
+        margin-top: 0; }
+      body #wrapper #content article p {
+        margin-top: 20px; }
+    body #wrapper .clear {
+      zoom: 1; }
+
+/*# sourceMappingURL=style.css.map */
