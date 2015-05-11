@@ -1,0 +1,72 @@
+html, body, header, section, footer, article, h1, h2, h3, h4, h5, h6, input, button, label, p, fieldset, nav, ul, li, a, span, strong, em, img, #wrapper {
+	margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+/* CLEARFIX */
+.clearfix {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+
+@mixin clearfix-full {
+  zoom: 1;
+
+  &:after {
+    @extend .clearfix;
+  }
+
+  &:before {
+    @extend .clearfix;
+  }
+}
+
+body {
+    #wrapper {
+        width: 930px;
+        font-family: Constantina, Georgia, 'Nimbus Roman No9 L', serif;
+        font-size: 16px;
+        margin: 25px;
+        border: 1px solid black;
+        border-radius: 15px;
+
+        h1 {
+            font-size: 30px;
+            margin: 15px 35px;
+            margin-bottom: 5px;
+        }
+
+        .postedby {
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+            width: 400px;
+            margin-top: 5px;
+            margin-left: 50px;
+            padding: 5px 15px;
+        }
+
+        .left-arrow {
+            float: left;
+            margin-top: 30px;
+        }
+
+        .right-arrow {
+            float: right;
+            margin-top: 30px;
+        }
+
+        .info {
+            @include clearfix-full;
+            margin: 20px 35px;
+            text-align: justify;
+        }
+    }
+}

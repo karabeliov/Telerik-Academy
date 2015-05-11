@@ -1,0 +1,47 @@
+html, body, header, section, footer, article, h1, h2, h3, h4, h5, h6, input, button, label, p, fieldset, nav, ul, li, a, span, strong, em, img, #wrapper {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+/* CLEARFIX */
+.clearfix, body #wrapper .info:after, body #wrapper .info:before {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both; }
+
+body #wrapper {
+  width: 930px;
+  font-family: Constantina, Georgia, 'Nimbus Roman No9 L', serif;
+  font-size: 16px;
+  margin: 25px;
+  border: 1px solid black;
+  border-radius: 15px; }
+  body #wrapper h1 {
+    font-size: 30px;
+    margin: 15px 35px;
+    margin-bottom: 5px; }
+  body #wrapper .postedby {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    width: 400px;
+    margin-top: 5px;
+    margin-left: 50px;
+    padding: 5px 15px; }
+  body #wrapper .left-arrow {
+    float: left;
+    margin-top: 30px; }
+  body #wrapper .right-arrow {
+    float: right;
+    margin-top: 30px; }
+  body #wrapper .info {
+    zoom: 1;
+    margin: 20px 35px;
+    text-align: justify; }
+
+/*# sourceMappingURL=task1.css.map */
