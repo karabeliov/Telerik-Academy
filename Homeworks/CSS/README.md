@@ -11,3 +11,5 @@
 04. [Preprocessors](https://github.com/karabeliov/Telerik-Academy/tree/master/Homeworks/CSS/04.Preprocessors)     => [[Instructions]] (https://github.com/karabeliov/Telerik-Academy/blob/master/Homeworks/CSS/04.Preprocessors/README.md)
 
 [Example Preparation](https://github.com/karabeliov/Telerik-Academy/tree/master/Homeworks/CSS/Exam-Preparation)
+
+[Example](https://github.com/karabeliov/Telerik-Academy/tree/master/Homeworks/CSS/Example)
