@@ -5,3 +5,5 @@
 01. [Data Types and Variables](https://github.com/karabeliov/Telerik-Academy/tree/master/Homeworks/JavaScript%20Fundamentals/01.Data-Types-and-Variables)     => [[Instructions]] (https://github.com/karabeliov/Telerik-Academy/blob/master/Homeworks/JavaScript%20Fundamentals/01.Data-Types-and-Variables/README.md)
 
 02. [Operators and Expressions](https://github.com/karabeliov/Telerik-Academy/tree/master/Homeworks/JavaScript%20Fundamentals/02.Operators-and-Expressions)     => [[Instructions]] (https://github.com/karabeliov/Telerik-Academy/blob/master/Homeworks/JavaScript%20Fundamentals/02.Operators-and-Expressions/README.md)
+
+03. [Conditional Statements](https://github.com/karabeliov/Telerik-Academy/tree/master/Homeworks/JavaScript%20Fundamentals/03.Conditional-Statements)     => [[Instructions]] (https://github.com/karabeliov/Telerik-Academy/blob/master/Homeworks/JavaScript%20Fundamentals/03.Conditional-Statements/README.md)
