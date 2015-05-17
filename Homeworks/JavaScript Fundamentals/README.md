@@ -9,3 +9,5 @@
 03. [Conditional Statements](https://github.com/karabeliov/Telerik-Academy/tree/master/Homeworks/JavaScript%20Fundamentals/03.Conditional-Statements)     => [[Instructions]] (https://github.com/karabeliov/Telerik-Academy/blob/master/Homeworks/JavaScript%20Fundamentals/03.Conditional-Statements/README.md)
 
 04. [Loops](https://github.com/karabeliov/Telerik-Academy/tree/master/Homeworks/JavaScript%20Fundamentals/04.Loops)     => [[Instructions]] (https://github.com/karabeliov/Telerik-Academy/blob/master/Homeworks/JavaScript%20Fundamentals/04.Loops/README.md)
+
+05. [Arrays](https://github.com/karabeliov/Telerik-Academy/tree/master/Homeworks/JavaScript%20Fundamentals/05.Arrays)     => [[Instructions]] (https://github.com/karabeliov/Telerik-Academy/blob/master/Homeworks/JavaScript%20Fundamentals/05.Arrays/README.md)
