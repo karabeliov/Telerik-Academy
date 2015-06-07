@@ -17,3 +17,9 @@
 07. [Using Objects](https://github.com/karabeliov/Telerik-Academy/tree/master/Homeworks/JavaScript%20Fundamentals/07.Using-Objects)     => [[Instructions]] (https://github.com/karabeliov/Telerik-Academy/blob/master/Homeworks/JavaScript%20Fundamentals/07.Using-Objects/README.md)
 
 08. [Strings](https://github.com/karabeliov/Telerik-Academy/tree/master/Homeworks/JavaScript%20Fundamentals/08.Strings)     => [[Instructions]] (https://github.com/karabeliov/Telerik-Academy/blob/master/Homeworks/JavaScript%20Fundamentals/08.Strings/README.md)
+
+09. [Array Methods](https://github.com/karabeliov/Telerik-Academy/tree/master/Homeworks/JavaScript%20Fundamentals/09.ArrayMethods)     => [[Instructions]] (https://github.com/karabeliov/Telerik-Academy/blob/master/Homeworks/JavaScript%20Fundamentals/09.ArrayMethods/README.md)
+
+10. [Regular Expressions](https://github.com/karabeliov/Telerik-Academy/tree/master/Homeworks/JavaScript%20Fundamentals/10.RegularExpressions)     => [[Instructions]] (https://github.com/karabeliov/Telerik-Academy/blob/master/Homeworks/JavaScript%20Fundamentals/10.RegularExpressions/README.md)
+
+[Example Preparation](https://github.com/karabeliov/Telerik-Academy/tree/master/Homeworks/JavaScript%20Fundamentals/Exam-Preparation)
