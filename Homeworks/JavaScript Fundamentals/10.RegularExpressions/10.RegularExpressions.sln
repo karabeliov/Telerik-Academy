@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.FormatPlaceholders", "01.FormatPlaceholders\01.FormatPlaceholders.csproj", "{A873363A-F941-424F-B2CD-14782A55F5F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.HTMLBinding", "02.HTMLBinding\02.HTMLBinding.csproj", "{2E641713-0244-4DD0-9DDC-8265E81A2AF5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A873363A-F941-424F-B2CD-14782A55F5F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A873363A-F941-424F-B2CD-14782A55F5F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A873363A-F941-424F-B2CD-14782A55F5F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A873363A-F941-424F-B2CD-14782A55F5F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E641713-0244-4DD0-9DDC-8265E81A2AF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E641713-0244-4DD0-9DDC-8265E81A2AF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E641713-0244-4DD0-9DDC-8265E81A2AF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E641713-0244-4DD0-9DDC-8265E81A2AF5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
