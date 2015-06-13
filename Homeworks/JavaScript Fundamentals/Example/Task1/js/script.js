@@ -35,13 +35,14 @@ function Main(bufferElement) {
         var nk = params[0].split(' ').map(Number),
             n = nk[0], k = nk[1],
             numbers = params[1].split(' ').map(Number);
-        var first = 0, second = 0, current = 0;
+        var first = 0, second = 0, current = 0, current1 = 0;
+        var arr = [], arr1 = [], bigger;
 
         for (j = 0; j < k; j += 1) {
             for (i = 0; i < n; i += 1) {
                 first = numbers[i - 1];
                 second = numbers[i + 1];
-                debugger;
+                //debugger;
                 if (first == undefined) {
                     first = 0;
                 }
@@ -50,31 +51,54 @@ function Main(bufferElement) {
                     second = 0;
                 }
 
-                if (numbers[i] === 0) {
-                    numbers[i] = Math.abs(first - second);
-                }
+                current = isTransform(numbers[i], first, second);
 
-                if (numbers[i] === 1) {
-                    numbers[i] = first + second;
-                }
-
-                if (i % 2 == 0) {
-                    if (first == 0) {
-                        first = numbers[i];
+                if (numbers[i] % 2 == 0) {
+                    if (numbers[i + 1] == undefined) {
+                        bigger = arr[p - 1];
                     }
 
-                    numbers[i] = Math.max(first, second);
+                    if (numbers[i - 1] == undefined) {
+                        bigger = numbers[i + 1];
+                    }
+                    else {
+                        bigger = Math.max(numbers[i - 1], numbers[i + 1]);
+                    }
                 }
                 else {
-                    numbers[i] = Math.min(first, second);
+                    if (numbers[i - 1] == undefined) {
+                        bigger = numbers[i + 1];
+                    }
+
+                    if (numbers[i + 1] == undefined) {
+                        bigger = arr[p - 1];
+                    }
+                    else {
+                        bigger = Math.min(numbers[i - 1], numbers[i + 1]);
+                    }
                 }
 
-                result += numbers[i];
+                console.log(bigger);
+                result += bigger;
             }
+
+            console.log(result);
+            return result;
         }
 
-        return result;
+        function isTransform(number, first, second) {
+            if (number === 0) {
+                number = Math.abs(first - second);
+            }
+
+            if (number === 1) {
+                number = first + second;
+            }
+
+            return number;
+        }
     }
+
     //#endregion
 
 
