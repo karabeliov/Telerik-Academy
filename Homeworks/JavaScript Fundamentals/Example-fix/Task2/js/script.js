@@ -12,7 +12,8 @@ function Main(bufferElement) {
         [
             '18',
             '13125'
-        ];
+        ],
+        result2 = '4253274252525';
 
     //#endregion 
 
@@ -23,18 +24,17 @@ function Main(bufferElement) {
     //#region Solution   
     function solve(args) {
         var i, j, len;
-        var result, compressText, encrypText, transformText, newAphabet = '',
+        var result, compressText, encrypText, transformText,
         text = args[0],
-        offset = 3, // Warning
+        offset = args[1],
         CONSTANTS = {
             ALPHABET: 'abcdefghijklmnopqrstuvwxyz'
         }
 
-        newAphabet = makeAphabet(CONSTANTS.ALPHABET.toString(), offset);
-        compressText = compression(text); // do to return
-        encrypText = encryption(compressText, newAphabet);
+        compressText = compression(text); 
+        encrypText = encryption(compressText, offset, CONSTANTS.ALPHABET);
         transformText = transform(encrypText)
-        //debugger;
+
         function compression(text) { 
             var compress = '';
             var count = 1;
@@ -71,26 +71,21 @@ function Main(bufferElement) {
             return compress;
         }
 
-        function encryption(text, key) {           
-            var kcount = key;
-
+        function encryption(text, key, alphabet) {           
+            var kcount = 26 - key;
             var encryp = '';
-           //debugger;
             
             for (var i = 0, len = text.length; i < len; i += 1) {
-                //debugger;
-
+                var codeChar = text.charCodeAt(i);
                 if (+text[i]) {
                     encryp += text[i];
-                    //console.log('yes');
                 }
                 else {
-                    var edit = text.charCodeAt(i) ^ key.charCodeAt(26 - kcount);
-                    kcount--;
+                    var edit = codeChar ^ codeChar + kcount;
                     encryp += edit;
                 }
             }
-            console.log(encryp);
+
             return encryp;
         }
 
@@ -98,33 +93,20 @@ function Main(bufferElement) {
             var sum = 0, product = 1;
             var result = '';
             for (var i = 0, len = text.length; i < len; i += 1) {
-                //debugger;
-                sum += +text[i];
-                product *= +text[i];
+                var currentDigit =  +text[i];
+                if (currentDigit % 2 == 0) {
+                    sum += currentDigit;
+                }
+                else {
+                    product *= currentDigit;
+                }
             }
 
             result += sum + '\n' + product;
             return result;
         }
 
-        function makeAphabet(text, key) {
-            var alpha = [];
-            for (var j = 0, len = text.length; j < len; j++) {
-                if (j == key) {
-                    break;
-                }
-
-                alpha.push(text[len - j - 1]);
-            }
-
-            var reverse = alpha.reverse().join('').toString() + text;
-
-            return reverse;
-
-        }
-
         result = transformText;
-        //console.log(result);
         return result;
     }
 
@@ -136,7 +118,5 @@ function Main(bufferElement) {
 
     //#region Output
     WriteLine("Result: " + solve(test1));
-
-    WriteLine("TEST1: " + (solve(test1) == result1));
     //#endregion
 }
