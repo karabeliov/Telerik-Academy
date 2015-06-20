@@ -24,10 +24,36 @@ function solve() {
     var library = (function () {
         var books = [];
         var categories = [];
+        var filtred = [];
 
         function listBooks() {
+          var args = arguments[0];
           
-            return books;
+          if (books.length === 0) {
+              return [];
+          }
+          
+          if(books.length === 1){
+				if(!args ||books[0].category === args.category){
+					return books;
+				}
+				else{
+					return [];
+				}
+			}
+            
+            if(args) {
+				filtred = books.filter(function (b) {
+					return b.category === args.category;
+				});
+			}
+			else{
+				filtred = books;
+			}
+            
+			return filtred.sort(function(a,b){
+				return a.ID- b.ID;
+			});
         }
 
         function addBook(book) {
