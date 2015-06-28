@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Game.Common.Fighter" Collapsed="true">
+    <Position X="9.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACACAAAAAAAAAAAAAAAAAAIAAAAAAEAAAAAAAAAA=</HashCode>
+      <FileName>Common\Fighter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Game.Common.GameObject" Collapsed="true">
+    <Position X="8.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAgAgAACAAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>Common\GameObject.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Game.Common.MovableObject" Collapsed="true">
+    <Position X="8.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAiAAAAABAAAAASAAAAAAAAAAAAA=</HashCode>
+      <FileName>Common\MovableObject.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Game.Common.Offset" Collapsed="true">
+    <Position X="14.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAADAAAAAAAAAAAAA=</HashCode>
+      <FileName>Common\Offset.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Game.Common.Point" Collapsed="true">
+    <Position X="16" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAA=</HashCode>
+      <FileName>Common\Point.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Game.Entities.Alien.Enemy" Collapsed="true">
+    <Position X="9.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAgAAAAAAAAAAAAAAAASAAAAAAABAAAIg=</HashCode>
+      <FileName>Entities\Alien\Enemy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Game.Entities.Alien.FlyEnemy" Collapsed="true">
+    <Position X="11.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgABAAAAAAAAAAAAAASAAAAAAABAAAAg=</HashCode>
+      <FileName>Entities\Alien\FlyEnemy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Game.Entities.Bullet" Collapsed="true">
+    <Position X="5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgAIAAAAAACAAAAAABAABAAAAAA=</HashCode>
+      <FileName>Entities\Bullet.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Game.Entities.Human.Player" Collapsed="true">
+    <Position X="7.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAkAgAAgAIAAAAAAIAAyACAAAAABAAAAg=</HashCode>
+      <FileName>Entities\Human\Player.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Game.UI.Field" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="14.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UI\Field.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Game.GameEngine" Collapsed="true">
+    <Position X="16" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAIAAAEAABAAAAgAACAAAAgBAAAAAEIAgAAI=</HashCode>
+      <FileName>GameEngine.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Game.Interface.IDraw" Collapsed="true">
+    <Position X="14.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interface\IDraw.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Game.Interface.IMove" Collapsed="true">
+    <Position X="16" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAACAAAAABAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interface\IMove.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="Game.Common.Direction" Collapsed="true">
+    <Position X="14.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAgIAAAAAAAAAAAAABAAAAAAAAAAACACAIAABAAI=</HashCode>
+      <FileName>Common\Direction.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
