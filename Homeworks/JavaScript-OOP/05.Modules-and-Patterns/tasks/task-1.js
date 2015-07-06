@@ -47,26 +47,25 @@
 function solve() {
 	var Course = {
 		init: function(title, presentations) {
-      // isValidInput(title);
-      // isValidInput(presentations);
-      
-      this.title = title;
-      this.name;
-      this.presentations = presentations;
-      this.students = [];
-      
+      isValidTitle(title);
+      this._title = title;
+      this._name;
+      this._presentations = presentations;
+      this._students = [];
 		},
 		addStudent: function(name) {
-      this.name = name;
-      this.students.push(this.name)
+      isValidName(name);
+      this._name = name;
+      this._students.push(this._name)
       return this;
 		},
 		getAllStudents: function() {
-      return this.students;
+      return this._students;
 		},
 		submitHomework: function(studentID, homeworkID) {
 		},
 		pushExamResults: function(results) {
+      result = results;
 		},
 		getTopStudents: function() {
 		}
@@ -80,7 +79,26 @@ function solve() {
           throw new Error();
         }
     }
+  }
+  
+  function isValidTitle(title) {
+    if (title[0] == ' ') {
+      throw new Error();
+    }
     
+    if (title[title.length - 1] == ' ') {
+      throw new Error();
+    }
+    
+    if (title.length < 2) {
+      throw new Error();
+    }
+  }
+  
+   function isValidName(name) {
+    if (name[0].toLowerCase()) {
+      throw new Error();
+    }
   }
 
 	return Course;
