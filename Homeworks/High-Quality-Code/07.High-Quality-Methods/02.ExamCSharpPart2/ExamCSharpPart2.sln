@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.MathProblem", "01.MathProblem\01.MathProblem.csproj", "{6E0A775A-C5C1-4282-948B-CE09A27C44F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.SumOfDifferences", "02.SumOfDifferences\02.SumOfDifferences.csproj", "{94A840C3-3B47-4CE0-B332-54967A024964}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.BishopPathFinder", "03.BishopPathFinder\03.BishopPathFinder.csproj", "{79239061-6021-4D01-AF81-136BF4531774}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6E0A775A-C5C1-4282-948B-CE09A27C44F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E0A775A-C5C1-4282-948B-CE09A27C44F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E0A775A-C5C1-4282-948B-CE09A27C44F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E0A775A-C5C1-4282-948B-CE09A27C44F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94A840C3-3B47-4CE0-B332-54967A024964}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94A840C3-3B47-4CE0-B332-54967A024964}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94A840C3-3B47-4CE0-B332-54967A024964}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94A840C3-3B47-4CE0-B332-54967A024964}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79239061-6021-4D01-AF81-136BF4531774}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79239061-6021-4D01-AF81-136BF4531774}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79239061-6021-4D01-AF81-136BF4531774}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79239061-6021-4D01-AF81-136BF4531774}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
