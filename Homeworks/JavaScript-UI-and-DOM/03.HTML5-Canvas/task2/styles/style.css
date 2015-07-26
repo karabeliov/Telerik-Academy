@@ -1,0 +1,7 @@
+#container {
+	border: 2px solid black;
+	position: absolute;
+	left: 50%;
+	margin-left: -400px;
+	box-shadow: 10px 10px 5px #888888;
+}
