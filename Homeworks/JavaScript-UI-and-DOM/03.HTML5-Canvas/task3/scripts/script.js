@@ -1,8 +1,10 @@
-  var stage = new Kinetic.Stage({
+  var stageWidth = 300,
+    stageHeight = 300,
+    stage = new Kinetic.Stage({
     container: 'container',
     //width: document.body.clientWidth
-    width: 800,
-    height: 600
+    width: stageWidth,
+    height: stageHeight
   });
 
   var layer = new Kinetic.Layer();
