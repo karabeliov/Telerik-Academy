@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Task 1</title>
+    <style>
+    svg{
+          margin: 10px 400px; 
+          border: 1px solid black;
+          box-shadow: 10px 10px 5px #888888;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <svg width="400" height="250">
+        <!--background-->
+        <rect x="0" y="0" width="400" height="90" stroke="none" fill="skyblue"></rect> 
+        <rect x="0" y="90" width="400" height="230" stroke="none" fill="green"></rect>
+        
+        <!--like 3D-->
+        <line x1="80" y1="50" x2="80" y2="20" stroke="black" stroke-width="2"></line>
+        <line x1="80" y1="20" x2="110" y2="10" stroke="black" stroke-width="2"></line>
+        <line x1="110" y1="10" x2="110" y2="40" stroke="black" fill="black" stroke-width="2"></line>
+        <path d="M200 50 L220 40 L220 80 L200 90 Z" fill="yellow" stroke="black" stroke-width="2"/>
+        <path d="M110 50 L100 50 M110 40 L220 40 L200 50 L80 50 Z" fill="red" stroke="black" stroke-width="2"/>
+        
+        <!--traktor-->
+        <rect x="80" y="50" width="120" height="50" stroke="black" fill="yellow" stroke-width="2"></rect>
+        <circle cx="100" cy="100" r="20" fill="white" stroke="black" stroke-width="20"></circle>
+        <circle cx="200" cy="100" r="20" fill="white" stroke="black" stroke-width="20"></circle>
+		
+		<!-- text -->
+		<text x="50" y="130" fill="cyan" transform="rotate(30 20,40)" font-family="Arial"  font-weight="bold"  font-size="25">This is with SVG!</text>
+      </svg>
+    </div>
+  </body>
+</html>

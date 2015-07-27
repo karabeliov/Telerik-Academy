@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Task 2</title>
+    <style>
+    svg{
+          margin: 10px 300px; 
+          border: 1px solid black;
+          box-shadow: 10px 10px 5px #888888;
+      }
+      .draggable {
+        cursor: move;
+      }
+
+    </style>
+    <script src="scripts/script.js"></script>
+  </head>
+  <body>
+    <div id="root">
+      <svg width="800" height="500">
+        <image xlink:href="imgs/win8.png" x="0" y="-50" width="800px" height="600px"/>
+        
+        <!--<text x="50" y="50" font-family="Verdana" font-size="30px" fill="white">Start</text>
+        -->
+        <rect class="draggable" x="50" y="60" width="100" height="50" 
+          fill="red" transform="matrix(1 0 0 1 0 0)" onmousedown="selectElement(evt)">
+        </rect>
+        <rect class="draggable" x="50" y="120" width="100" height="50" 
+          fill="green" transform="matrix(1 0 0 1 0 0)" onmousedown="selectElement(evt)">
+        </rect>
+        <rect class="draggable" x="50" y="180" width="100" height="50" 
+          fill="blue" transform="matrix(1 0 0 1 0 0)" onmousedown="selectElement(evt)">
+        </rect>
+        <rect class="draggable" x="50" y="240" width="100" height="50" 
+          fill="yellow" transform="matrix(1 0 0 1 0 0)" onmousedown="selectElement(evt)">
+        </rect>
+        <rect class="draggable" x="50" y="300" width="100" height="50" 
+          fill="purple" transform="matrix(1 0 0 1 0 0)" onmousedown="selectElement(evt)">
+        </rect>
+      </svg>
+    </div>
+  </body>
+</html>
