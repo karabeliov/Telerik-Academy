@@ -1,0 +1,31 @@
+<html>
+<head></head>
+<body>
+	<div>
+		<h1 id="title">Practice with Events</h1>
+		<ul>
+		</ul>
+	</div>
+	<script>
+		var h1 = document.getElementById('title');
+		var list = document.getElementsByTagName("ul")[0];
+		h1.onmouseover = function () {
+			h1.style.color = "red";
+			h1.style.cursor = "pointer";
+		}
+		
+		h1.onmouseleave = function () {
+			h1.style.color = "black";
+			list.innerHTML = "";
+		}
+		
+		h1.onclick = function () {
+			for (var index = 0; index < 5; index+=1) {
+				var element = document.createElement('li');
+				element.innerHTML = "Number: " + index;
+				list.appendChild(element);
+			}
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<html>
+<head>
+	<title></title>
+	<script src="jquery-2.1.4.min/index.js"></script>
+</head>
+<body>
+	<div id="box">
+		<ul>
+
+		</ul>
+	</div>
+    <script>
+        var $box = $("#box");
+        var $list = $("ul");
+        $box.css("background-color", "orange");
+        for (var i = 1; i <= 5; i += 1) {
+            var $currentItem = $("<li>");
+            $currentItem.text("Number: " + i);
+            $list.append($currentItem);
+        }
+
+        var $firstItem = $("li").first();
+
+        $firstItem.hover(function () {
+            $box.css("background-color", "yellow");
+        });
+
+        var $secondItem = $firstItem.next();
+        $secondItem.hover(function () {
+            $box.css("background-color", "pink");
+        });
+
+        var $threeItem = $secondItem.next();
+        $threeItem.hover(function () {
+            $box.css("background-color", "orange");
+        });
+
+        var $button = $('<button>')
+            .addClass('click')
+            .html('Click me')
+            .click(function myfunction() {
+                $box.fadeToggle();
+            })
+            .prependTo(document.body);
+    </script>
+
+</body>
+</html>
