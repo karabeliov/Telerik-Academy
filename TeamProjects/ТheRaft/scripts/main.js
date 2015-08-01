@@ -121,7 +121,7 @@
             }
 
             //console.log(validator.validateMove());
-            if (validator.validateMove()) {
+            if (validator.validateMove().canTravel) {
                 validator.travel();
                 raft.travel();
                 game.movesMade++;
@@ -166,10 +166,23 @@
         });
         
         function playWrong() {
+			  var messegeConflict = new Kinetic.Text({
+				  x: 280,
+				  y: 260,
+				  fontFamily: 'Arial',
+				  fontWeight: 'bold',
+				  fontSize: 24,
+				  text: validator.validateMove().messege,
+				  fill: 'darkred',
+				  stroke: 'darkred'
+			  });
+  
             gameLayer.add(wrong);
+			gameLayer.add(messegeConflict);
             gameLayer.batchDraw();
             setTimeout(function() {
                 wrong.remove();
+				messegeConflict.remove();
             }, 500);
         }
         //Some checks
@@ -201,22 +214,22 @@
                 opacity: 0.7
             });
             var lt = new Kinetic.Text({
-                x: gameStage.width() / 2 - 100,
+                x: gameStage.width() / 2 - 230,
                 y: gameStage.height() / 2 - 20,
                 fontFamily: 'Verdana',
                 fontSize: 30,
                 fontWeight: 'bold',
-                text: 'You have lost!',
+                text: 'Съжалявам, но вие загубихте!',
                 fill: 'red'
             });
 			
 			 var lt2 = new Kinetic.Text({
-                x: gameStage.width() / 2 - 80,
+                x: gameStage.width() / 2 - 140,
                 y: gameStage.height() / 2 - 60 ,
                 fontFamily: 'Verdana',
                 fontSize: 30,
                 fontWeight: 'bold',
-                text: 'Time is up!',
+                text: 'Времето ви изтече!',
                 fill: 'red'
             });
 			
@@ -235,7 +248,7 @@
         var won = new Kinetic.Text({
             x: gameStage.width() / 2 - 120,
             y: 100,
-            text: 'You have won!',
+            text: 'Вие спечелихте!',
             fontSize: 38,
             fontFamily: 'Verdana',
             fill: 'red'

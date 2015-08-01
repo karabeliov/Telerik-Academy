@@ -63,24 +63,22 @@ var Validator = (function(){
 		criminal = That(this.raft).has('criminal');
 		
 		if (this.raft.seated.length === 0) {
-			//console.log('Raft is empty.');
-			return false;
+			return {canTravel: false, messege: 'Сала е празен.'};
 		}
 		if (this.raft.seated.length === 1 && criminal) {
-			//console.log('Criminal can\'t travel alone.');
-			return false;
+			return {canTravel: false, messege: 'Затворника не може да пътува сам.'};
 		}
 		if (criminal && !policeman) {
-			//console.log('Criminal can\'t travel without policeman.');
-			return false;
+			return {canTravel: false, messege: 'Затворника не може да пътува без полицая.'};
 		}
 		if ((boy || girl) && !(mother || father || policeman)) {
-			//console.log('Children can\'t travel alone.');
-			return false;
+			return {canTravel: false, messege: 'Децата не могат да пътуват сами.'};
 		}
-		if ((boy && mother) || (girl && father)) {
-			//console.log('Children can\'t travel with opposite gender parent');
-			return false;
+		if (boy && mother) {
+			return {canTravel: false, messege: 'Майката не може да пътува със синовете.'};
+		}
+		if (girl && father) {
+			return {canTravel: false, messege: 'Бащата не може да пътува с дъщерите.'};
 		}
 		
 		var policemanOnRaft = policeman;
@@ -98,16 +96,13 @@ var Validator = (function(){
 			}
 		}
 		if (!policemanOnRaft && That(chars).has('criminal') && !That(chars).has('policeman')) {
-			//console.log('Error 37!');
-			return false;
+			return {canTravel: false, messege: 'Затворника може да убие всички.'};
 		}
 		if (mother && !father && That(chars).has('boy') && !That(chars).has('father')) {
-			//console.log('Error 38!');
-			return false;
+			return {canTravel: false, messege: 'Майката може да набие синовете.'};
 		}
 		if (father && !mother && That(chars).has('girl') && !That(chars).has('mother')) {
-			//console.log('Error 39!');
-			return false;
+			return {canTravel: false, messege: 'Бащата може да набие дъщерите.'};
 		}
 		
 		//Check is the side the raft is on is valid
@@ -127,16 +122,16 @@ var Validator = (function(){
 		criminal = That(chars).has('criminal');
 		
 		if (chars.length > 1 && criminal && !policeman) {
-			return false;
+			return {canTravel: false, messege: 'Затворника може да убие всички.'};
 		}
 		if (boy && mother && !father) {
-			return false;
+			return {canTravel: false, messege: 'Майката може да набие синовете.'};
 		}
 		if (girl && father && !mother) {
-			return false;
+			return {canTravel: false, messege: 'Бащата може да набие дъщерите.'};
 		}
 		//Finally:
-		return true;
+		return {canTravel: true, messege: 'Няма конфликти.'};
 	};
 	
 	Validator.prototype.travel = function() {

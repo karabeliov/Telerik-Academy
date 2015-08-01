@@ -26,7 +26,7 @@
       y: 100,
       fontFamily: 'Verdana',
       fontSize: 30,
-      text: 'Instruction',
+      text: 'Инструкции',
       fill: 'black',
       stroke: 'black'
   });
@@ -36,7 +36,7 @@
       y: 160,
       fontFamily: 'Verdana',
       fontSize: 18,
-      text: 'The goal is to get all eight people across the river.',
+      text: 'Целта на играта е да преведете всички на отсрещният бряг.',
       fill: 'black',
       stroke: 'black'
   });
@@ -46,7 +46,7 @@
       y: 190,
       fontFamily: 'Verdana',
       fontSize: 18,
-      text: 'You must respect the following rules:',
+      text: 'Като трябва да спазите следните условия:',
       fill: 'black',
       stroke: 'black'
   });
@@ -56,7 +56,7 @@
       y: 230,
       fontFamily: 'Verdana',
       fontSize: 18,
-      text: '- Not more than two people can be on the raft at one time.',
+      text: '- Не повече от двама пътници на сала.',
       fill: 'black',
       stroke: 'black'
   });
@@ -66,7 +66,7 @@
       y: 260,
       fontFamily: 'Verdana',
       fontSize: 18,
-      text: '- Only the mother, father & officer can operate the raft.',
+      text: '- Само майката, бащата и полицая могат да управляват сала.',
       fill: 'black',
       stroke: 'black'
   });
@@ -76,7 +76,7 @@
       y: 290,
       fontFamily: 'Verdana',
       fontSize: 18,
-      text: '- The mother cannot be left with the sons without the father.',
+      text: '- Майката не може да остава със синовете без бащата.',
       fill: 'black',
       stroke: 'black'
   });
@@ -86,7 +86,7 @@
       y: 320,
       fontFamily: 'Verdana',
       fontSize: 18,
-      text: '- The father cannot be left with the daughters without the mother.',
+      text: '- Бащата не може да остава с дъщерите без майката.',
       fill: 'black',
       stroke: 'black'
   });
@@ -96,7 +96,7 @@
       y: 350,
       fontFamily: 'Verdana',
       fontSize: 18,
-      text: '- The prisoner cannot be left with anyone without the officer.',
+      text: '- Затворника не може да остава с никого без полицая.',
       fill: 'black',
       stroke: 'black'
   });
@@ -106,7 +106,7 @@
       y: 380,
       fontFamily: 'Verdana',
       fontSize: 18,
-      text: '- You have 10 minutes to do it.',
+      text: '- Имате 10 минути, за да го направите.',
       fill: 'black',
       stroke: 'black'
   });
