@@ -20,8 +20,26 @@ Create a function that takes a selector and COUNT, then generates inside a UL wi
 */
 
 function solve() {
-  return function (selector, count) {
-   
+    return function (selector, count) {
+    if (selector == null || !selector || typeof(selector) !== 'string') {
+      throw "";
+    }
+    
+    if (count < 1 || typeof(count) !== 'number' || !count || isNaN(count)) {
+      throw "";
+    }
+    
+    var element = $(selector),
+        ul = $('<ul />').addClass('items-list'),
+        li,
+        i;
+
+    for (i = 0; i < count; i += 1) {
+        li = $('<li />').addClass('list-item').text('List item #' + i);
+        li.appendTo(ul);
+    }
+
+    ul.appendTo(element);
   };
 };
 
