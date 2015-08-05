@@ -1,0 +1,44 @@
+<html>
+<head>
+    <style> 
+        .table {
+             border: 1px solid black;
+             width: 150px;
+        }
+    </style>
+</head>
+<body>
+    <script type="text/x-handlebars-template" id="table-template">
+        <div class='table'>
+            <div>
+                <table class="table">
+                    <tr>
+                        <td>{{number}}</td>
+                        <td>{{name}}</td>
+                    </tr>
+                    {{#each row}}
+                    <tr>
+                        <td>{{@index}}</td>
+                        <td>{{this}}</td>
+                    </tr>
+                    {{/each}}
+                </table>
+            </div>
+        </div>
+    </script>
+    <script src='libs\handlebars.min.js'></script>
+
+    <script>
+        var table = {
+             number: 'Facultet number',
+             name: 'Last name',
+             row: ['Karabeliov','Uzunova','Ivanov']
+        };
+
+        var tableTemplateHTML = document.getElementById('table-template').innerHTML;
+        var tableTemplate = Handlebars.compile(tableTemplateHTML);
+
+        document.body.innerHTML = tableTemplate(table);
+    </script>
+    </body>
+</html>

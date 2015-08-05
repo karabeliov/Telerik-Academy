@@ -1,0 +1,38 @@
+<html>
+<head>
+    <title>DOM Performance</title>
+    <meta />
+    <style></style>
+    <script></script>
+</head>
+<body>
+    <div id="wrapper">
+        <ul>
+            <li class="item1"></li>
+            <li class="item2"></li>
+            <li class="item3"></li>
+            <li class="item4"></li>
+        </ul>
+    </div>
+
+    <script>
+        var ul = document.getElementsByTagName('ul')[0],
+            li = document.createElement('li'),
+            docFragment = document.createDocumentFragment();
+
+
+        for (var i = 1; i <= 10; i++) {
+            var liCopy = li.cloneNode(true);
+            liCopy.innerHTML = '<a href="http://www.google.bg">Number: ' + i + '</a>';
+            docFragment.appendChild(liCopy);
+        }
+
+        ul.appendChild(docFragment);
+
+        ul.addEventListener('click', function (ev) {
+            var target = ev.target;
+            alert(target.innerText);
+        })
+    </script>
+</body>
+</html>

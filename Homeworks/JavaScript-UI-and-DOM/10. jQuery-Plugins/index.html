@@ -1,0 +1,36 @@
+<html>
+<head>
+	<title></title>
+	<script src="jquery-2.1.4.min/index.js"></script>
+</head>
+<body>
+	<div id="box">
+		<ul>
+            <li>Kris</li>
+		</ul>
+	</div>
+    <script>
+        (function myfunction($) {
+            var count;
+            $.fn.toggleColor = function (colorStart, colorEnd) {
+                var $this = this;
+
+                $this.on("mouseover", function () {
+                    $this.css("background-color", colorStart);
+                });
+
+                $this.on("mouseout", function () {
+                    $this.css("background-color", colorEnd);
+                });
+
+                return $this;
+            }
+        }(jQuery))
+
+
+        var $box = $("#box");
+        $box.toggleColor("orange", "red");
+    </script>
+
+</body>
+</html>
