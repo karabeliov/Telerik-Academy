@@ -1,0 +1,37 @@
+<fieldset>
+  <legend>All Fortune Cookies</legend>
+  {{#each this}}
+  <h3><a href="#/cookies?category={{category}}">{{category}}</a></h3>
+  {{#each items}}
+    <div class="cookie-box" data-id="{{id}}">
+<p>
+  {{text}}
+</p>
+<p>
+  {{category}}
+</p>
+<p>
+  {{userId}}
+</p>
+<p>
+  {{likes}}
+</p>
+<p>
+  {{dislikes}}
+</p>
+<p>
+  {{img}}
+</p>
+<p>
+  {{shareDate}}
+</p>
+<p>
+  {{id}}
+</p>
+<p>
+  {{hours}}
+</p>
+    </div>
+  {{/each}}
+{{/each}}
+</fieldset>
