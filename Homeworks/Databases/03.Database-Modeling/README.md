@@ -1,5 +1,4 @@
 ## 03. Database Modelling
-### [View Presentation online]()
 ### Table of Contents
 *   Data Modelling – Principles
 *	Data Types in SQL Server
