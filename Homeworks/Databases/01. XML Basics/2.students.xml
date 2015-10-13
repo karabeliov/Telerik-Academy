@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<?xml-stylesheet type="text/xsl" href="7.style.xslt" ?>
+<students>
+	<student>
+		<name>Ivan Petrov</name>
+		<sex>Male</sex>
+		<birthDate>1.1.2000</birthDate>
+		<phone>+359888888888</phone>
+		<email>vankata@abv.bg</email>
+		<course>JavaScript</course>
+		<specialty>Software engineer</specialty>
+		<facultyNumber>111222</facultyNumber>
+		<takenExams>
+			<name>HTML5</name>
+			<tutor></tutor>
+			<score>90</score>
+		</takenExams>
+	</student>
+	
+	<student>
+		<name>Maria Petrova</name>
+		<sex>Male</sex>
+		<birthDate>10.6.2010</birthDate>
+		<phone>+359888888888</phone>
+		<email>vankata@abv.bg</email>
+		<course>JavaScript</course>
+		<specialty>Software engineer</specialty>
+		<facultyNumber>111222</facultyNumber>
+		<takenExams>
+			<name>C# part 1</name>
+			<tutor></tutor>
+			<score>100</score>
+		</takenExams>
+	</student>
+	
+	<student>
+		<name>Peter Ivanov</name>
+		<sex>Male</sex>
+		<birthDate>15.11.2005</birthDate>
+		<phone>+359888888888</phone>
+		<email>vankata@abv.bg</email>
+		<course>JavaScript</course>
+		<specialty>Software engineer</specialty>
+		<facultyNumber>111222</facultyNumber>
+		<takenExams>
+			<name>CSS</name>
+			<tutor></tutor>
+			<score>80</score>
+		</takenExams>
+	</student>
+</students>

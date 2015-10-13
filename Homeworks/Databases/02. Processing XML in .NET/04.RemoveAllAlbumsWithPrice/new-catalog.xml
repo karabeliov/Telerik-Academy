@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<catalog>
+  <album>
+    <name>Summer hit</name>
+    <artist>Krisko</artist>
+    <year>2014</year>
+    <producer>Krisko beats</producer>
+    <price>15</price>
+    <songs>
+      <song>
+        <title>Zabranena lubov</title>
+        <duration>3:25</duration>
+      </song>
+      <song>
+        <title>Ministar na veselieto</title>
+        <duration>4:00</duration>
+      </song>
+      <song>
+        <title>Ne dylja nishto</title>
+        <duration>3.45</duration>
+      </song>
+    </songs>
+  </album>
+  <album>
+    <name>Summer hit</name>
+    <artist>100 kila</artist>
+    <year>2014</year>
+    <producer>100 kila</producer>
+    <price>10</price>
+    <songs>
+      <song>
+        <title>Taka taka</title>
+        <duration>3:25</duration>
+      </song>
+      <song>
+        <title>Lanec na vrata mi</title>
+        <duration>4:00</duration>
+      </song>
+      <song>
+        <title>Az sym 6</title>
+        <duration>3.45</duration>
+      </song>
+    </songs>
+  </album>
+  <album>
+    <name>Summer hit</name>
+    <artist>100 kila</artist>
+    <year>2014</year>
+    <producer>100 kila</producer>
+    <price>20</price>
+    <songs>
+      <song>
+        <title>Taka taka</title>
+        <duration>3:25</duration>
+      </song>
+      <song>
+        <title>Lanec na vrata mi</title>
+        <duration>4:00</duration>
+      </song>
+      <song>
+        <title>Az sym 6</title>
+        <duration>3.45</duration>
+      </song>
+    </songs>
+  </album>
+</catalog>
