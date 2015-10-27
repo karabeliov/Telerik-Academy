@@ -1,0 +1,78 @@
+Ключови думи в SQL
+SELECT селектира и връща резултат 
+TOP брои резултати 
+
+UNION събира всички колони в една
+INTERSECT събира всички повтарящи се от Сета от записи
+EXCEPT събира всички уникални от Сета от записи
+
+WHERE филтрира данните по даден критерии (Boolean)
+	AND логическо "И" &
+	OR логическо "ИЛИ" ||
+	NOT различно !
+	BETWEEN - между някакъв диапазон
+	IN в даден критерии
+	NOT IN не е в даден критерии
+	LIKE - търси по даден шаблон (Конкретни символи за търсене)
+	IS NULL - сравнява дали стойността е null
+	IS NOT NULL - сравнява дали стойността е различна от null
+ORDER BY - сортиране по критерии (може да се изброяват няколко)
+	ASC - сортиране по възходящ ред (default)
+	DESC - низходящ ред
+
+JOIN
+	ON
+FROM (Може да се изброяват)
+	INNER JOIN	Свързани колони
+	OUTER JOIN Несвързани колони		(LEFT, RIGHT, FULL)
+	
+INSERT INTO table VALUES(val, var)
+
+По-добре е с JOIN от колкото с nested SELECT
+EXISTS - поне един резултат
+
+GROUP FUNCTIONS
+	COUNT - преброява
+	SUM - сумира
+	AVG - дава среден резултат
+	MAX - дава максимална стойност
+	MIN - дава минимална стойност
+GROUP BY - групира по дадени критерии
+	- може да връща групите или функции върху дадена колона от групите
+	- филтрирането в групи се използва HAVING вместо WHERE (работи само преди GROUP BY)
+FUNCTIONS
+	ISNULL(var, default value)
+	COALESCE(val, val) - първата, която не е null
+	LOWER - малки букви
+	UPPER - големи букви
+	SUBSTRING
+	LEN -  броя символи
+	LEFT -  SUBSTRING от ляво
+	RIGHT - SUBSTRING от дясно
+	TRIM
+	REPLACE - заменя
+	ROUND - закръгля нагоре
+	FLOOR - закръгля надолу
+	POWER - повдига на степен
+	ABS - абсолютна стойност
+	SQRT - корен квадратен
+	GETDATE
+	DATEADD
+	DAY
+	MONTH
+	YEAR
+	CONVERT
+	CAST
+	
+MASTER DDL
+	CREATE
+	ALTER
+	DROP
+DCL
+	GRANT
+	REVOKE
+	DENY
+	
+BEGIN TRAN - започва транзакция
+ROLLBACK -  отменя всички действия
+COMMIT -  прилага всички действия
