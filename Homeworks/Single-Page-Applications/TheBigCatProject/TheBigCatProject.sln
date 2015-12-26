@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheBigCatProject.Server", "TheBigCatProject.Server\TheBigCatProject.Server.csproj", "{F86B9E65-BC14-4A7F-B998-A7A7248C4441}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheBigCatProject.Client", "TheBigCatProject.Client\TheBigCatProject.Client.csproj", "{211CD3BB-631C-4D9B-B7B6-A28A8811FD1F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F86B9E65-BC14-4A7F-B998-A7A7248C4441}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F86B9E65-BC14-4A7F-B998-A7A7248C4441}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F86B9E65-BC14-4A7F-B998-A7A7248C4441}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F86B9E65-BC14-4A7F-B998-A7A7248C4441}.Release|Any CPU.Build.0 = Release|Any CPU
+		{211CD3BB-631C-4D9B-B7B6-A28A8811FD1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{211CD3BB-631C-4D9B-B7B6-A28A8811FD1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{211CD3BB-631C-4D9B-B7B6-A28A8811FD1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{211CD3BB-631C-4D9B-B7B6-A28A8811FD1F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

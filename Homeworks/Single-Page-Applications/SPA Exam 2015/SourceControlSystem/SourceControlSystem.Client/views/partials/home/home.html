@@ -1,0 +1,75 @@
+﻿<div class="container">
+    <div class="jumbotron text-center">
+        <img src="../../../img/gitcup.png" width="200" />
+        <h1>Welcome to Git Cup</h1>
+        <h2>Future Source control system!</h2>
+    </div>
+
+    <div class="row jumbotron">
+        <div class="col-md-3 text-center">
+            <div>
+                <strong>Total Users</strong>
+            </div>
+            <div>
+                <span>{{vm.stats.Users}}</span>
+            </div>
+        </div>
+
+        <div class="col-md-3 text-center">
+            <div>
+                <strong>Total Projects</strong>
+            </div>
+            <div>
+                <span>{{vm.stats.Projects}}</span>
+            </div>
+        </div>
+
+        <div class="col-md-3 text-center">
+            <div>
+                <strong>Total Commits</strong>
+            </div>
+            <div>
+                <span>{{vm.stats.Commits}}</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="panel panel-primary text-center">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Latest 10 Project</h3>
+                </div>
+                <div class="panel-body">
+                    <div all-projects />
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="panel panel-primary text-center">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Latest 10 commits</h3>
+                </div>
+                <div class="panel-body">
+                    <table class="table table-bordered"">
+                        <tr>
+                            <th class="text-center">
+                                UserName
+                            </th>
+                            <th class="text-center">
+                                CreatedOn
+                            </th>
+                        </tr>
+                        <tr ng-repeat="driver in vm.PublicCommits">
+                            <td class="text-center">
+                                <a href="#/">{{driver.UserName}}</a>
+                            </td>
+                            <td class="text-center">{{driver.CreatedOn | beautifulDate}}</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

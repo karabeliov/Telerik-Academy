@@ -1,0 +1,30 @@
+﻿<table class="table table-bordered">
+    <tr>
+        <th class="text-center">
+            Name of Project
+        </th>
+        <th class="text-center">
+            Collaborator count
+        </th>
+        <th class="text-center">
+            License
+        </th>
+        <th class="text-center">
+            CreatedOn
+        </th>
+    </tr>
+    <tr ng-repeat="project in vm.projects" ng-class-even="'even-class'" ng-class-odd="'odd-class'">
+        <td class="text-center">
+            <a href="#/">{{project.Name}}</a>
+        </td>
+        <td class="text-center">
+            {{project.TotalUsers}}
+        </td>
+        <td class="text-center">
+            {{project.License}}
+        </td>
+        <td class="text-center">
+            {{project.CreatedOn | beautifulDate}}
+        </td>
+    </tr>
+</table>
